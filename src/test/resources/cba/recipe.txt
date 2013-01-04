@@ -1,0 +1,11 @@
+//https://www.my.commbank.com.au/netbank/Logon/Logon.aspx
+val page = WebPage.open("https://www.my.commbank.com.au/netbank/Logon/Logon.aspx")(WebPage.CHROME_20)
+    page.typeString("#txtMyClientNumber_field", id)
+    page.typeString("#txtMyPassword_field", pass)
+    page.click("#btnLogon_field")
+
+page.click("#ctl00_BodyPlaceHolder_MyPortfolioGrid1_a div[class='left'] a[title='Streamline']")
+
+page.first(".WhiteSpinner100")
+
+

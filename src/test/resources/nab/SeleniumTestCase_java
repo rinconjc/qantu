@@ -1,0 +1,58 @@
+package com.example.tests;
+
+import com.thoughtworks.selenium.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import java.util.regex.Pattern;
+
+public class NAB_navigation {
+	@Before
+	public void setUp() throws Exception {
+		selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://www.nab.com.au/");
+		selenium.start();
+	}
+
+	@Test
+	public void testNAB_navigation() throws Exception {
+		selenium.open("/?mdd_redir=n");
+		selenium.click("name=Login");
+		selenium.waitForPopUp("ib", "30000");
+		selenium.selectWindow("name=ib");
+		selenium.type("id=ib-user-text", "xxxx");
+		selenium.type("name=password", "xxxx");
+		selenium.click("link=Login");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=Transactions");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("id=showFilterLink");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("css=img[alt=\"Click to select a date from the calendar (opens in new window)\"]");
+		selenium.waitForPopUp("Calendar", "30000");
+		selenium.click("id=periodFromDateD");
+		selenium.click("id=periodFromDateD");
+		selenium.type("id=periodFromDateD", "31/08/11");
+		selenium.click("id=periodToDateD");
+		selenium.click("id=displayButton");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=2");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=1");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=Previous");
+		selenium.click("link=Previous");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=Previous");
+		selenium.click("link=Previous");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=2");
+		selenium.waitForPageToLoad("30000");
+		selenium.click("link=Account summary");
+		selenium.waitForPageToLoad("30000");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		selenium.stop();
+	}
+}

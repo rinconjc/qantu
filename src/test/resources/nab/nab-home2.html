@@ -1,0 +1,1589 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html lang="en">
+  <head>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>
+      Account summary
+    </title>
+    <!--link removed-->
+    <!--link removed-->
+    <!--link removed-->
+    <!--link removed-->
+    <!--link removed-->
+    
+  <!--link removed-->
+      
+  <!--link removed-->
+      <!--link removed-->
+    <!--link removed-->
+    <!--script removed-->
+    <!--script removed-->
+    <!--script removed-->
+    <!--script removed-->
+    <!--script removed-->
+    <!--script removed-->
+    <script type="text/Javascript">
+//<![CDATA[
+
+		var logouturl  = 'preLogout.ctl';
+
+//]]>
+    </script>
+    <!--script removed-->
+    <!--script removed-->
+  </head>
+  <body id="bA" onload="init()" onunload="">
+    <div class="wrapper">
+      <div id="bodyContent">
+        <!--link removed-->
+        <script type="text/Javascript" language="JavaScript">
+//<![CDATA[
+
+var displayPageExitMsg = false;
+
+
+function confirmCreateExit() {
+	
+		
+			return true;
+		
+	
+}
+
+
+
+
+
+
+
+
+
+function helpwin(loc,ft_1) {
+  if(isMac&&NS4)ft_1=ft_1+",status=yes";
+  hw=window.open(loc,'Help',ft_1);
+  hw.focus();
+}
+
+function abswin(loc,st_1){
+  if(isMac&&NS4)st_1=st_1+",status=yes";
+  hw=window.open(loc,'absLink',st_1);
+  hw.focus();
+}
+
+
+
+
+function logoff() {
+	if (confirm('Thank you for banking with UFi.nAre you sure you want to logout?')) { 		
+		
+		
+			logoffIB();
+		
+	}
+}
+
+
+function logoffIB() {
+	navigateTo("logoutToWCM.ctl?bw=" + browserWidth() + "&bh=" + browserHeight());		
+}
+
+
+var SST_MYBUDGET_URL = "proxy/fmt";
+	
+
+function logoffFMT() {
+	// This code has been extracted from mybudgetClient.js - logoutMBWithCB()
+	$.ajax({
+		url: SST_MYBUDGET_URL + '/logout',
+		data: { ajax: '1' },
+		complete: logoffIB
+	});
+}
+
+
+function logoffAndGoToNationalLocation() {
+	logoffOpenWindow("http://ols.nab.com.au/location-web/search.do",
+		'Thank you for banking with 2jW.nAre you sure you want to logout?');
+}
+
+
+function goToNationalLocation() {
+	window.open("http://ols.nab.com.au/location-web/search.do",
+				"",
+				"width=963,height=899,resizable=yes,scrollbars=yes,menubar=no,status=yes,directories=no,location=no,left=0,top=0,screenX=0,screenY=0");
+}
+
+
+function goToNationalContact() {
+	window.open("http://www.nab.com.au/wps/wcm/connect/nab/nab/home/About_Us/3",
+				"",
+				"width=218,height=255,resizable=yes,scrollbars=yes,menubar=no,status=yes,directories=no,location=no,left=0,top=0,screenX=0,screenY=0");
+}
+
+
+function goToSecurity() {
+	window.open("http://www.nab.com.au/wps/wcm/connect/nab/nab/home/About_Us/22",
+				"",
+				"width=638,height=3,resizable=yes,scrollbars=yes,menubar=no,status=yes,directories=no,location=no,left=0,top=0,screenX=0,screenY=0");
+}
+
+function applyTxAccount() {
+	openWindow("https://www.nab.com.au/ibeveryday??SA.seg_1=CLf");
+}
+
+function applyCreditCard() {
+	openWindow("https://ols.nab.com.au/olcc-web/prefill.jsp");
+}
+
+function applyPersonalLoan() {
+	openWindow("https://www.nab.com.au/ibpersonalloan?mo.seg_1=Uki");
+}
+
+function applyHomeLoan() {
+	openWindow("https://www.nab.com.au/ibhomeloan?nb.seg_1=l0X");
+}
+
+function applyHyioAccount() {
+	openWindow("https://www.nab.com.au/ibsaving?Jd.seg_1=bbu");
+}
+
+
+
+function logoffOpenWindow(location, message) {
+	if (confirm(message)) { 
+		window.open(location,
+			"",
+			"width=31,height=86,resizable=yes,scrollbars=yes,menubar=no,status=yes,directories=no,location=no,left=0,top=0,screenX=0,screenY=0");
+			
+		submitMenu('logout.ctl'); 
+	}
+}
+
+function openWindow(location) {
+	window.open(location,
+		"",
+		"width=735,height=795,resizable=yes,scrollbars=yes,menubar=no,status=yes,directories=no,location=no,left=0,top=0,screenX=0,screenY=0");	
+}
+
+
+
+
+
+//]]>
+        </script>
+        <div id="header">
+          <div class="inside clearfix">
+            <div class="column-1">
+              <img src="images/style/logo_nab.gif" alt="NAB" class="logo"/>
+              <p class="slogan">
+                <img border="0" alt="more give, less take" src="images/style/gr_slogan.gif"/>
+              </p>
+            </div>
+            <div class="column-2">
+              <p>
+                Saturday 06 October 2012  
+              </p>
+              <ul>
+                <li class="first">
+                  <a id="page-utils-container-print" title="Print" href="acctInfo_acctBalPrint.ctl">
+                    Print
+                  </a>
+                </li>
+                <li>
+                  <a title="Help (opens in new window)" href="javascript:helpwin('http://www.nab.com.au/wps/wcm/connect/nab/Internet_Banking_Help/home/2/1','top=20,left=50,width=780,height=560,toolbar=yes,scrollbars=yes,resizable=yes')" onmouseout="status='';return true;" onfocus="status='Help';return true;" onclick="">
+                    Help
+                  </a>
+                </li>
+                <li>
+                  <a title="Security" href="javascript:sendMenuRequest('/nabib/admin_Security.ctl')" onclick="">
+                    Security
+                  </a>
+                </li>
+                <li>
+                  <a title="Contact us" href="javascript:goToNationalContact()" onclick="">
+                    Contact us
+                  </a>
+                </li>
+                <li>
+                  <a title="Locate us" href="javascript:goToNationalLocation()" onclick="">
+                    Locate us
+                  </a>
+                </li>
+              </ul>
+              <a class="logout_button red" title="Logout" href="javascript:logoff();">
+                Logout
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--script removed-->
+        <div id="banner">
+          <div class="inside clearfix">
+            <a href="#" title="Need help? Chat with the NAB Online Assistant" onclick="submitNOLAIBHelp('nab','&lt;spv>3~Y&lt;/spv>&lt;spv>5~25&lt;/spv>&lt;spv>7~nabib/acctInfo_acctBal.ctl&lt;/spv>&lt;spv>2~N&lt;/spv>&lt;spv>4~Y&lt;/spv>&lt;spv>6~100&lt;/spv>&lt;spv>1~Y&lt;/spv>','link')">
+              <img class="ib-nola" border="0" alt="Need help? Chat with the NAB Online Assistant" src="images/nola/ib_nola_new.gif"/>
+            </a>
+          </div>
+          <!--  This fix is for IE, which could not handle when NOLA was turned off -->        </div>
+        <div id="brandingText" class="printOnly">
+          aVl Internet Banking
+        </div>
+      </div>
+      <table class="tlIB" cellspacing="0" cellpadding="0">
+        <tbody align="left">
+          <tr>
+            <td>
+              <table class="tlIB" cellspacing="0" cellpadding="0">
+                <tbody align="left">
+                  <tr>
+                    <td class="leftNavWidth leftNavBackground">
+                      <table border="0" cellspacing="0" cellpadding="0">
+                        <tbody align="left">
+                          <tr>
+                            <td class="leftNavWidth">
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                <tbody align="left">
+                                  <tr>
+                                    <td style="border-bottom:1px solid #EBEBEB" height="25">
+                                      <img src="/nabib/images/dot.gif" height="1" width="145" alt="  "/>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td width="145" onkeydown="javascript:event.cancelBubble=true" onclick="javascript:sendMenuRequest('acctInfo_acctBal.ctl');return false;">
+                                      <a class="snis" href="javascript:sendMenuRequest('acctInfo_acctBal.ctl')">
+                                        Account summary
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td width="145" onkeydown="javascript:event.cancelBubble=true" onclick="javascript:sendMenuRequest('transactionHistorySelectAccount.ctl');return false;">
+                                      <a class="sni" href="javascript:sendMenuRequest('transactionHistorySelectAccount.ctl')">
+                                        Transaction history
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td width="145" onkeydown="javascript:event.cancelBubble=true" onclick="javascript:sendMenuRequest('/nabib/ols_search_new.ctl');return false;">
+                                      <a class="sni" href="javascript:sendMenuRequest('/nabib/ols_search_new.ctl')">
+                                        Statements
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td width="145" onkeydown="javascript:event.cancelBubble=true" onclick="javascript:sendMenuRequest('acctInfo_acctDet.ctl');return false;">
+                                      <a class="sni" href="javascript:sendMenuRequest('acctInfo_acctDet.ctl')">
+                                        Account details
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td width="145" onkeydown="javascript:event.cancelBubble=true" onclick="javascript:sendMenuRequest('acctInfo_stopCheque.ctl');return false;">
+                                      <a class="sni" href="javascript:sendMenuRequest('acctInfo_stopCheque.ctl')">
+                                        Stop cheque
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td width="145" onkeydown="javascript:event.cancelBubble=true" onclick="javascript:sendMenuRequest('acctInfo_reOrder.ctl');return false;">
+                                      <a class="sni" href="javascript:sendMenuRequest('acctInfo_reOrder.ctl')">
+                                        Re-order book
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td width="145" onkeydown="javascript:event.cancelBubble=true" onclick="javascript:sendMenuRequest('/nabib/statement_reorder.ctl');return false;">
+                                      <a class="sni" href="javascript:sendMenuRequest('/nabib/statement_reorder.ctl')">
+                                        Re-order statement
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td class="verticalSpacer">
+                        
+                    </td>
+                    <td valign="top">
+                      <table class="mainContent">
+                        <tbody align="left">
+                          <tr>
+                            <td class="spacemedium" style="width:100%">
+                               
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <a name="content" class="pageTitle">
+                                Account summary
+                              </a>
+                            </td>
+                            <td class="body">
+                            </td>
+                          </tr>
+                          <tr id="layout-gap-under-title">
+                            <td class="spacemedium" style="width:100%">
+                               
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class=" mainContent" style="width:100%">
+                        <div class="outer">
+                          <table class="gPageContent" width="100%">
+                            <tbody align="left">
+                              <tr>
+                                <td>
+                                  <!--link removed-->
+                                  
+<!--link removed--> 
+                                    
+                                  <script language="javascript" type="text/javascript">
+//<![CDATA[
+
+
+
+
+function logout_and_redirect(url, message) {
+	var features = 'location=yes,menubar=yes,resizable=yes,toolbar=yes,scrollbars=yes,status=yes';
+	if( !confirm(message) ) {
+		return;
+	}
+    
+	window.open(url, '_blank', features);
+	submitMenu('logout.ctl'); 
+}
+
+function initMessage()
+{ 
+
+}
+
+function confirmExport()
+{
+  if(confirm('Are you sure you want to export this data?'))
+  {
+    canClose = false;
+    
+    document.submitForm.method = "0XE";
+    document.submitForm.action = "acctInfo_acctBalExp.ctl";
+    document.submitForm.submit();
+  }
+}
+
+/*
+ * View Transaction History
+ */
+function viewTransaction(acctId, acctType)
+{
+  canClose = false; 
+  document.submitForm.action = "transactionHistoryGetSettings.ctl";
+  document.submitForm.accountType.value = acctType;
+  document.submitForm.account.value = acctId;
+  document.submitForm.submit();
+}
+/*
+ * View Account Details
+ */
+function viewAccountDetail(acctId)
+{
+  canClose = false; 
+  document.submitForm.action = "acctInfo_acctDet.ctl";
+  document.submitForm.account.value = acctId;
+  document.submitForm.submit();
+}
+/*
+ * Pay bill
+ */
+function payBill(acctId)
+{
+  canClose = false; 
+  document.submitForm.action = "billPayment_selectBiller.ctl";
+  document.submitForm.fromAccount.value = acctId;
+  document.submitForm.submit();
+}
+/*
+ * Transfer funds
+ */
+function transferFunds(acctId)
+{
+  canClose = false; 
+  document.submitForm.action = "payments_transferNew.ctl";
+  document.submitForm.fromAccount.value = acctId;
+  document.submitForm.submit();
+}
+
+function noltRedirect(action)
+{
+  if( !confirm('To access this service you will be required to logout of Internet Banking.n Are you sure you want to logout?') )
+    return;
+
+  document.noltRedirectForm.noltRedirectAction.value = action;
+  document.noltRedirectForm.submit();
+}
+
+function wealthHubRedirect(action)
+{
+  if( !confirm('To access this service you will be required to logout of Internet Banking.n Are you sure you want to logout?') )
+    return;
+
+  if(action == 'register') {
+  // on register we want to display the page in the same window
+  	document.wealthHubRedirectFormRegister.submit();
+  }	
+  
+  // info and login go here
+  else {
+  // else we want to close the current one and open up a new window
+	setTimeout(function(){window.close();}, 841);
+	document.wealthHubRedirectForm.wealthHubRedirectAction.value = action;
+	document.wealthHubRedirectForm.submit();
+  }
+}
+
+function accountBalanceInitialise() {
+	initMessage();
+//	intialize_twisties();
+}
+ 
+function viewOnlineStatements(acctId) {
+  canClose = false; 
+  document.submitForm.action = "ols_search_new.ctl";
+  document.submitForm.fromAccount.value = acctId;
+  document.submitForm.submit();
+}
+
+
+//]]>
+                                  </script>
+                                  <script language="javascript" type="text/javascript">
+//<![CDATA[
+
+function toggleTable(cssSelector) {
+	$(cssSelector).toggle();	
+	var keyHash = -1060539167;
+	createCookie("accbal.twisty" + cssSelector + "." + keyHash, $(cssSelector + ".persistedTwisty").css("display"), 365);
+	updateSectionTwistyIcon(cssSelector);
+	return false;
+}
+
+function getAndValidateCookie(name) {
+	var value = getCookie(name);
+	
+	if (value == 'block' || value == 'none') return value; 
+	return 'block';
+}
+
+function updateSectionTwistyIcon(cssSelector) {
+	if ($(cssSelector).css('display') == 'none') {
+		$(cssSelector +'Twisty').attr('src','images/plus.gif');
+	}
+	else {
+		$(cssSelector +'Twisty').attr('src','images/minus.gif');	
+	}
+}
+
+$(document).ready(function() {
+	var keyHash = -409544377;
+	$('.bankingSection').css("display", getAndValidateCookie("accbal.twisty.bankingSection." + keyHash));
+	$('.insuranceSection').css("display", getAndValidateCookie("accbal.twisty.insuranceSection." + keyHash));
+	$('.investmentSection').css("display", getAndValidateCookie("accbal.twisty.investmentSection." + keyHash));
+	updateSectionTwistyIcon('.bankingSection');
+	updateSectionTwistyIcon('.insuranceSection');
+	updateSectionTwistyIcon('.investmentSection');
+	
+	// There may be a help page to show because the user was transferred here
+	// from a request not available to their authorisation role(s)
+	var notAuth = 'null';
+	if (notAuth == 'ttHelp') {
+		location.href = $('#ttHelpDiv a').attr('href');
+	}
+});
+
+//]]>
+                                  </script>
+                                  <script language="javascript" type="text/javascript">
+//<![CDATA[
+
+$(document).ready(function() {
+	$('.quickLink[href]').addClass('quickLinkActive');
+});
+
+
+
+
+//]]>
+                                  </script>
+                                  <style type="text/css">
+                                    
+
+#rightUtilityBar{
+	width: 779px;	
+	height: 211px;
+	vertical-align: top; 
+}
+
+
+#layout-gap-under-title {
+	display:none;
+}
+
+.frameHeader {
+	height: 1.6em;
+	color: white;
+	font-weight: bold;
+	background-color: gray;
+	margin-top: 5px;
+	padding-top: 3px;
+}	
+.baseSection {
+	width: 49%;	
+	vertical-align: top;
+}
+.frameHeader .title {
+	margin-left: 5px;
+	float: left;
+}		
+.frameHeader .close {
+	margin-right: 5px;
+	float: right;
+	cursor: pointer;
+	color: white;
+}	
+.frameHeader .close:vlink {
+	color: white;
+}		
+.frameHeader .close:hlink {
+	color: white;
+}		
+.frameHeader .count {
+	margin-right: 5px;
+	float: right;
+}	
+	
+
+.countNotification {
+	width: 15%;
+}
+#infoMessage {
+	width: 59%;
+}
+
+.infoBox {
+	 background-color: #gZQqXG;
+	 font-size:9pt;
+	 padding: 10px;
+	 color: #4D4D4D;
+	 margin-left: 15px;	 	 
+	 border: 1px solid #aATfz7;     
+     border-radius: 3px 3px 3px 3px;
+	 moz-border-radius: 3px 3px 3px 3px;    
+	 font-weight:normal;  	 
+	 position: relative;
+	 width:70%;
+}
+
+
+a.quickLink {
+	font-size: 11px;
+	color: gray;
+}
+a.quickLink:hover {
+	color: gray;
+}
+a.quickLinkActive { /* When the quick link is active */
+	color: black;
+}
+a.quickLinkActive:hover { /* When the quick link is active */
+	color: red;
+}
+
+
+a.accountNickname {
+	text-decoration: none;
+	color: black;
+}
+a.accountNickname:hover {
+    color: #E19720;
+}
+span.accountNickname {
+	font-weight: bold;
+	font-size: 15px;
+	padding-right: 4px;	
+}
+.accountNumber {
+	font-size: 11px; 
+}
+
+
+.Twisty a {
+	margin-bottom: 5px;
+}
+.Twisty img {
+	margin-right: 5px;
+}
+
+
+a.pageTitle {
+	display: none;
+}
+
+
+                                  </style>
+                                  <a name="top"/>
+                                  <div id="ttHelpDiv" style="display: none;">
+                                    <a title="Help (opens in new window)" href="javascript:helpwin('http://www.nab.com.au/wps/wcm/connect/nab/Internet_Banking_Help/home/4/9','top=20,left=50,width=780,height=560,toolbar=yes,scrollbars=yes,resizable=yes')" onmouseout="status='';return true;" onfocus="status='Help';return true;" onclick="">
+                                      help
+                                    </a>
+                                  </div>
+                                  <form name="submitForm" action="transactionHistoryGetSettings.ctl" method="post">
+                                    <input type="hidden" name="account"/>
+                                    <input type="hidden" name="accountType"/>
+                                    <input type="hidden" name="fromAccount"/>
+                                  </form>
+                                  <form action="noltRedirect.ctl" method="post" name="noltRedirectForm">
+                                    <input type="hidden" name="noltRedirectAction"/>
+                                  </form>
+                                  <form action="wealthHubRedirect.ctl" method="post" name="wealthHubRedirectForm" target="_blank">
+                                    <input type="hidden" name="wealthHubRedirectAction"/>
+                                  </form>
+                                  <form action="wealthHubRedirect.ctl" method="post" name="wealthHubRedirectFormRegister">
+                                    <input type="hidden" name="wealthHubRedirectAction" value="register"/>
+                                  </form>
+                                  <table width="100%" style="margin-top:3px;">
+                                    <tbody align="left">
+                                      <tr>
+                                        <td id="accountSummary" valign="top">
+                                          <div class="border_bottom clearfix">
+                                            <a name="bankingSection"/>
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                              <tbody align="left">
+                                                <tr>
+                                                  <td align="left" width="50%" valign="top" style="padding-bottom:5px; border-bottom:none;">
+                                                    <a href="" class="Twisty" style="text-decoration:none;" onclick="return(toggleTable('.bankingSection'))" title="Toggles banking section">
+                                                      <img src="images/minus.gif" class="bankingSectionTwisty" alt="Banking"/>
+                                                      Account summary
+			
+                                                    </a>
+                                                  </td>
+                                                  <td align="right" width="50%" valign="top" style="padding-bottom:5px; border-bottom:none;">
+                                                    <div id="bankingExport" style="text-align: right; margin-right: 5px; display: block;" class="bankingSection">
+                                                      <a href="acctInfo_acctBalExp.ctl" title="Exports account summary" class="ico-smallgreyArrow">
+                                                        
+					Export data
+				
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <div class="bankingSection persistedTwisty" style="display: block;">
+                                              <table class="table01" style="width:100%;" id="accountBalances_nonprimary_subaccounts">
+                                                <thead align="left">
+                                                  <tr>
+                                                    <th class="colheader leftText order1">
+                                                      <a href="/nabib/acctInfo_acctBal.ctl?d-3983008-o=1&amp;d-3983008-s=0&amp;emailAddress=jcrinconc%40yahoo.com&amp;d-3983008-p=1" title="Sort by Account">
+                                                        Account
+                                                      </a>
+                                                      <img src="images/sortarrow_up.gif" alt="Ascending order" style="width: 7; height: 7; border: 0;"/>
+                                                    </th>
+                                                    <th class="colheader rightText nowrap">
+                                                      Current balance
+                                                    </th>
+                                                    <th class="colheader rightText nowrap">
+                                                      Available balance
+                                                      <sup>
+                                                        <a style="color: #e20000;text-decoration: none;" title="What is available balance?" href="javascript:alert('Account balance listed is the total amount of funds available. Transfers are subject to uncleared funds eg a deposited cheque.');">
+                                                          ?
+                                                        </a>
+                                                      </sup>
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody align="left">
+                                                  <tr class="oddRowColor">
+                                                    <td style="width: 60%;">
+                                                      <div class="acctDetails acctCat-deposit">
+                                                        <a href="javascript:viewTransaction('858327549','DDA')" title="Click to view transaction history" class="accountNickname">
+                                                          <span class="accountNickname">
+                                                            933324739
+			    	
+                                                          </span>
+                                                        </a>
+                                                        <div class="accountNumber">
+                                                          <b>
+                                                            BSB: 
+                                                          </b>
+                                                          535-657
+	    		
+	    			
+                                                          <b>
+                                                            Acct No: 
+                                                          </b>
+                                                          85-151-1485		    			
+	    	
+                                                        </div>
+                                                        <div>
+                                                          <a href="javascript:viewTransaction('858327549','DDA')" title="Click to view transaction history" class="quickLink quickLinkActive">
+                                                            Transactions
+                                                          </a>
+                                                           |	    	
+		    	   			
+			    
+                                                          <a href="javascript:payBill('858327549')" title="Click to pay bill" class="quickLink quickLinkActive">
+                                                            Pay bill
+                                                          </a>
+                                                           |
+		    	
+		    				
+			    
+                                                          <a href="javascript:transferFunds('858327549')" title="Click to transfer funds" class="quickLink quickLinkActive">
+                                                            Transfer funds
+                                                          </a>
+                                                           |
+	    	
+		    	
+                                                          <a href="javascript:viewAccountDetail('858327549')" title="Click to view account details" class="quickLink quickLinkActive">
+                                                            Account details
+                                                          </a>
+                                                        </div>
+                                                        <div style="padding:3px 0pt 0pt;">
+                                                        </div>
+                                                      </div>
+                                                    </td>
+                                                    <td class="rightText" style="width: 20%">
+                                                      
+		
+			
+						
+	
+				
+	
+				
+					
+					
+						962.97 CR
+					
+				
+				
+						
+		
+	
+                                                    </td>
+                                                    <td class="rightText" style="width: 20%; font-weight: bold;">
+                                                      
+						
+		
+			
+				
+				
+					958.97
+                
+			
+		
+	
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <style>
+                                                
+a.portfolioFacility {
+	text-decoration: none; 
+	color: black;
+}
+a.portfolioFacility:hover {
+    color: #E68187;
+}
+
+                                              </style>
+                                              <table class="table01" width="100%" id="banking_totals">
+                                                <tbody align="left">
+                                                  <tr class="body evenRowColor">
+                                                    <td width="30%" class="banking_totals" style="border-top: 2px solid #D5D5D5;">
+                                                       
+                                                    </td>
+                                                    <td width="30%" class="banking_totals rightText" style="border-top: 2px solid #D5D5D5;">
+                                                      Credit balance:
+                                                    </td>
+                                                    <td width="20%" class="banking_totals rightText" style="border-top: 2px solid #D5D5D5;">
+                                                      
+		    	82.97
+		    	CR
+		    
+                                                    </td>
+                                                    <td width="20%" class="banking_totals" style="border-top: 2px solid #D5D5D5;">
+                                                       
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="body evenRowColor">
+                                                    <td width="30%" class="banking_totals">
+                                                       
+                                                    </td>
+                                                    <td width="30%" class="banking_totals rightText">
+                                                      Debit balance:
+                                                    </td>
+                                                    <td width="20%" class="banking_totals rightText">
+                                                      
+		    	0.00 
+				DR
+			
+                                                    </td>
+                                                    <td width="20%" class="banking_totals">
+                                                       
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="body oddRowColor">
+                                                    <td width="30%" class="banking_totals" style="border-bottom: 3px solid #D5D5D5;;">
+                                                       
+                                                    </td>
+                                                    <td width="30%" class="banking_totals rightText" style="font-weight: bold;border-bottom: 3px solid #D5D5D5;">
+                                                      Net position:
+                                                    </td>
+                                                    <td width="20%" class="banking_totals rightText" style="font-weight: bold;border-bottom: 3px solid #D5D5D5;">
+                                                      
+		    	322.97 CR
+			
+                                                    </td>
+                                                    <td width="20%" class="banking_totals" style="border-bottom: 3px solid #D5D5D5;">
+                                                       
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                          <div class="border_bottom clearfix">
+                                            <a name="investmentSection"/>
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                              <tbody align="left">
+                                                <tr>
+                                                  <td align="left" width="50%" valign="top" style="padding-bottom:5px; border-bottom:none;">
+                                                    <a href="" class="Twisty" style="text-decoration:none;" onclick="return(toggleTable('.investmentSection'))" title="Toggles investment section">
+                                                      <img src="images/minus.gif" class="investmentSectionTwisty" alt="Investments"/>
+                                                      Investments
+			
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <div class="infoBox">
+                                              <div class="helpText">
+                                                <b>
+                                                  If you're a XIv Online Trading customer your holdings view may be temporarily unavailable or delayed due to the 
+                                                  <a title="transition to nabtrade? (opens in new window)" href="javascript:openPopUpWindow('
+		   	  	http://learn.nabtrade.com.au
+		   	  	   ', 'learn nabtrade', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')">
+                                                     transition to nabtrade
+                                                  </a>
+                                                   . Check your Mailbox for more information.
+                                                </b>
+                                              </div>
+                                            </div>
+                                            <div class="investmentSection persistedTwisty" style="display: block;">
+                                              <div style="clear: both;">
+                                                 
+                                              </div>
+                                              
+	
+	    Want your share portfolio displayed here? Trade shares online with nabtrade.
+	    
+                                              <a class="red" href="javascript:wealthHubRedirect('info')" title="Find out more about nabtrade (opens in a new window)">
+                                                
+		    Find out more
+		
+                                              </a>
+                                              
+		or
+	    
+                                              <a class="red" href="javascript:wealthHubRedirect('register')" title="Find out more about nabtrade (opens in a new window)">
+                                                
+		    Add your nabtrade investments or open a nabtrade account.
+		
+                                              </a>
+                                              .
+	
+	
+
+  
+
+  
+
+
+                                            </div>
+                                          </div>
+                                          <div class="border_bottom clearfix">
+                                            <a name="insuranceSection"/>
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                              <tbody align="left">
+                                                <tr>
+                                                  <td align="left" width="50%" valign="top" style="padding-bottom:5px; border-bottom:none;">
+                                                    <a href="" class="Twisty" style="text-decoration:none;" onclick="return(toggleTable('.insuranceSection'))" title="Toggles insurance section">
+                                                      <img src="images/minus.gif" class="insuranceSectionTwisty" alt="Insurance"/>
+                                                      Insurance
+			
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <div class="insuranceSection persistedTwisty" style="display: block;">
+                                              <div style="clear: both;">
+                                                 
+                                              </div>
+                                              <div class="clearfix">
+                                                <div class="call-to-action-box rounded-corners clearfix">
+                                                  <div style="width: 420px; float:left; margin-top: 10px;">
+                                                    <p>
+                                                      See 36G and General Insurance products
+                                                    </p>
+                                                  </div>
+                                                  <a class="link-btn link-btn_sm red float-right" href="javascript:sendMenuRequest( '/nabib/registerForEnhancedInternetBanking.ctl' )" title="Learn more">
+                                                    Learn more
+                                                  </a>
+                                                </div>
+                                                <div style="clear: both;">
+                                                   
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="clearfix">
+                                            <div class="featuresReminder rounded-corners clearfix">
+                                              <table cellspacing="0" cellpadding="0" style="margin-top:-10px;margin-left:-1px;width:40%;">
+                                                <tbody align="left">
+                                                  <tr>
+                                                    <td style="vertical-align: bottom; white-space: nowrap; padding-left: 0; border-bottom:none;">
+                                                      <p class="customise-ib">
+                                                        
+				Customise the way you bank   
+			
+                                                      </p>
+                                                    </td>
+                                                    <td style="width: 300px;border-bottom:none;">
+                                                      <div class="progress_bar">
+                                                        <div class="progress_entry" style="width: 60%;">
+                                                          <div class="progress_entry_text">
+                                                             
+			    		 60%  
+			    	
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <div style="float: left;">
+                                                <div style="width: 187px; float: left; padding: 10px 19px 0 0;">
+                                                  <div>
+                                                    <a href="/nabib/admin_settings.ctl?src=FR">
+                                                      <img src="images/feature-account-nicknames.gif" width="65px" style="border: 0;" alt="Folder overlayed with a person"/>
+                                                    </a>
+                                                  </div>
+                                                  <div style="font-weight: bold; font-size: 14px; font-family: Arial,Helvetica,sans-serif; height: 32px;">
+                                                    
+		Personalise your account
+	
+                                                  </div>
+                                                  <div style="font-size: 3px;">
+                                                     
+                                                  </div>
+                                                  <div style="height: 60px;">
+                                                    
+		Why not personalise your account by applying a nickname to the account?
+	
+                                                  </div>
+                                                  <div class="helpText">
+                                                    <a title="Help (opens in new window)" href="javascript:helpwin('http://www.nab.com.au/wps/wcm/connect/nab/Internet_Banking_Help/home/7/6','top=20,left=50,width=780,height=560,toolbar=yes,scrollbars=yes,resizable=yes')" onmouseout="status='';return true;" onfocus="status='Help';return true;" onclick="">
+                                                      find out more
+                                                    </a>
+                                                  </div>
+                                                  <div class="nola">
+                                                    <a class="genericButton link-btn" href="/nabib/admin_settings.ctl?src=FR">
+                                                      Start setup
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div style="width: 187px; float: left; padding: 10px 19px 0 0;">
+                                                  <div>
+                                                    <a href="selectAlerts.ctl?src=FR">
+                                                      <img src="images/feature-alerts.gif" width="65px" style="border: 0;" alt="SMS speech bubble"/>
+                                                    </a>
+                                                  </div>
+                                                  <div style="font-weight: bold; font-size: 14px; font-family: Arial,Helvetica,sans-serif; height: 32px;">
+                                                    
+		U39 Alerts
+	
+                                                  </div>
+                                                  <div style="font-size: 3px;">
+                                                     
+                                                  </div>
+                                                  <div style="height: 60px;">
+                                                    
+		We'll tell you what's happening to your accounts by sending you reminders and notifications
+	
+                                                  </div>
+                                                  <div class="helpText">
+                                                    <a title="Help (opens in new window)" href="javascript:helpwin('http://www.nab.com.au/wps/wcm/connect/nab/Internet_Banking_Help/home/7/14','top=20,left=50,width=780,height=560,toolbar=yes,scrollbars=yes,resizable=yes')" onmouseout="status='';return true;" onfocus="status='Help';return true;" onclick="">
+                                                      find out more
+                                                    </a>
+                                                  </div>
+                                                  <div class="nola">
+                                                    <a class="genericButton link-btn" href="selectAlerts.ctl?src=FR">
+                                                      Start setup
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div style="clear:both;">
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td id="rightUtilityBar">
+                                          <p class="last-login">
+                                            <span>
+                                              Last login: 
+                                            </span>
+                                            
+			06 May at 9:23 My
+		
+                                          </p>
+                                          <!-- First iframe (leads) -->                                          <div class="mailbox call-to-action-box rounded-corners clearfix" id="currencyRate">
+                                            <div class="ib-feature bottom-border">
+                                              <h2>
+                                                Exchange Rate
+                                              </h2>
+                                            </div>
+                                            <form method="GET" action="/nabib/international_transfer.ctl">
+                                              <div class="currency AUD">
+                                                AUD
+                                              </div>
+                                              <input type="text" class="rate" id="rate-aud" value="1.00"/>
+                                              <div id="currenciesDropdown" class="USD">
+                                                <input type="hidden" name="wcurrency" id="currencyInput" value="USD"/>
+                                                <a href="javascript:void(0);" id="currency">
+                                                  0p2
+                                                </a>
+                                                <img src="images/drop_down_arrow.gif" id="ddArrow"/>
+                                                <div id="currencies" style="display: none;">
+                                                  <a href="javascript:void(0)" class="currency USD" id="USD">
+                                                    zeJ
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency GBP" id="GBP">
+                                                    Nyr
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency NZD" id="NZD">
+                                                    uRQ
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency EUR" id="EUR">
+                                                    LYA
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency ZAR" id="ZAR">
+                                                    EFY
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency CAD" id="CAD">
+                                                    BSz
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency THB" id="THB">
+                                                    HM3
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency PHP" id="PHP">
+                                                    AQ7
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency SGD" id="SGD">
+                                                    Kt3
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency HKD" id="HKD">
+                                                    y5v
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency INR" id="INR">
+                                                    bsw
+                                                  </a>
+                                                  <a href="javascript:void(0)" class="currency JPY" id="JPY">
+                                                    8GJ
+                                                  </a>
+                                                </div>
+                                              </div>
+                                              <input type="text" name="wrate" id="rate" class="rate" value="0.98"/>
+                                              <p class="r">
+                                                <input type="submit" value="Transfer Now" class="Button"/>
+                                              </p>
+                                            </form>
+                                            <script type="text/javascript">
+//<![CDATA[
+
+				var _curr_ = null;
+				
+				function calcRateChange(el, aud) {
+					var a, val = el.value || el.val();
+					if(!aud) { a = val / _curr_.ttSellRate; }
+					else { a = val * _curr_.ttSellRate; }
+					if(isNaN(a)) {return 0;}
+					return a.toFixed(2);
+				}
+				
+				function onCurrChange(el) {
+					var val = el.id;
+					$("#currencyInput").val(val);
+					$.ajax({
+						url: "/nabib/exchange_rates_get_reference_rate.ctl",
+						dataType: "json",
+						data: {currency: val},
+						success: function(res) {
+							_curr_ = res;
+							$("#rate").attr({value: calcRateChange($("#rate-aud"), true)});
+							$("#currencies").hide();
+						},
+						error: function(res) {$("#currencies").hide();}
+					});
+				}
+				
+				function onRateChange(el){setTimeout(function() { $("#rate-aud").val(calcRateChange(el));}, 500);}
+				function onAudRateChange(el) {setTimeout(function() {$("#rate").val(calcRateChange(el, true));}, 500);}
+				
+				$(document).ready(function() {
+					$("#currency, #ddArrow").click(function(e) { $("#currencies").toggle(); });
+					$("#currencies a.currency").click(function(e) { 
+						onCurrChange(e.target); 
+						$("#currency").html(e.target.innerHTML);
+						$("#currenciesDropdown").removeClass();
+						$("#currenciesDropdown").addClass(e.target.id);
+					});
+					$("#rate").keypress(function(e) { onRateChange(e.target); });
+					$("#rate-aud").keypress(function(e) { onAudRateChange(e.target); });
+					$("#currency option:first-child").attr({selected: true});
+					$("#USD").click();
+				});
+			
+//]]>
+                                            </script>
+                                          </div>
+                                          <script type="text/javascript">
+//<![CDATA[
+
+function viewMessageDetails(key, msgtype, refId) {
+	canClose = false;
+	document.submitForm.key.value = key;
+	document.submitForm.msgType.value = msgtype;
+	document.submitForm.action = "messages_messageDet.ctl";
+	document.submitForm.submit();
+}
+
+//]]>
+                                          </script>
+                                          <div class="mailbox call-to-action-box rounded-corners clearfix">
+                                            <div class="ib-feature bottom-border">
+                                              <h2>
+                                                Mailbox
+                                              </h2>
+                                            </div>
+                                            <div class="ib-feature clearfix">
+                                              <p>
+                                                <a href="messages_messageList.ctl" class="ico-smallGreyArrow" title="View all">
+                                                  View all (46 new)
+                                                </a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <!-- Second iframe -->                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <p>
+                                    If you don't want to receive further offers within eYZ Internet Banking, open the 
+                                    <b>
+                                      Settings
+                                    </b>
+                                     menu and select 
+                                    <b>
+                                      Internet Banking settings
+                                    </b>
+                                    .
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="verticalSpacer">
+                       
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <form id="menuForm" name="menuForm" method="post">
+        <input type="hidden" name="nix" value=""/>
+      </form>
+      <script>
+//<![CDATA[
+	
+		function getErrorMessagesText()
+		{
+			return '';
+		}
+		
+		function getLockOutMessageText()
+		{
+			return '';
+		}
+		
+		function showAlertPopup(messageString) {
+			if (messageString.length > 0) {	
+				
+							onLoadAlert(messageString);
+								
+			}
+		}
+		
+		function showLockoutConfirmation(messageString) {
+			if (messageString.length > 0 ) {
+			
+				if (confirm(messageString)) {
+				
+					submitMenu('password_reset.ctl');
+				} else {
+					window.close();
+				}					
+						
+			}
+		}		
+			
+	    
+	    function setFocusOnFirstErrorFieldOnLoad(formName)
+	    {
+			
+		}
+	
+	
+//]]>
+      </script>
+      <!--script removed-->
+      <style>
+        .milonic{width:1px;visibility:hidden;position:absolute}
+      </style>
+      <script type="text/javascript">
+//<![CDATA[
+
+
+if(ns4)
+	_d.write("<script type=text/javascript src=scripts/menu/mmenuns4.js?id=006><\/script>");		
+  else 
+  	_d.write("<script type=text/javascript src=scripts/menu/mmenudom.js?id=006><\/script>"); 
+
+//]]>
+      </script>
+      <!--script removed-->
+      <script>
+//<![CDATA[
+function $9(ap){return 0}
+//]]>
+      </script>
+      <!--script removed-->
+      <script language="JavaScript1.2" type="text/javascript">
+//<![CDATA[
+
+<!-- Hide script from html
+_menuCloseDelay=568;
+_menuOpenDelay=344;
+_subOffsetTop=1;
+_subOffsetLeft=-2;
+
+with(menuStyle=new mm_style()){
+
+offclass="topNavBackground";
+onclass="topNavBackgroundOn";
+pageclass="topNavBackgroundSel";
+
+menubgcolor="transparent";
+separatorcolor="transparent"; 
+separatorsize=2;
+
+itemwidth=661;
+itemheight=32;
+
+}
+
+with(subItemMenuStyle=new mm_style()){
+bordercolor="#733431";
+borderstyle="solid";
+borderwidth=1;
+
+fontfamily="Arial, Helvetica, sans-serif";
+fontsize="12px";
+fontstyle="normal";
+fontweight="bold";
+
+offbgcolor="#oPRwdx";
+offcolor="#E30841";
+onbgcolor="#F1F1EF";
+oncolor="#712908";
+
+separatorcolor="#91442";
+separatorsize=1;
+itemwidth=829;
+itemheight=25;
+padding=4;
+rawcss="padding-left:8px;padding-right:6px;padding-top:4px;padding-bottom:3px;vertical-align:middle;text-align:left;";
+}
+with(milonic=new menuname("Main Menu")){alwaysvisible=1;orientation="horizontal";style=menuStyle;left=0;top=835;
+aI("showmenu=accountInfo;text=Accounts;url=javascript:sendMenuRequest("acctInfo_acctBal.ctl");title=Accounts;");
+aI("showmenu=payments.billPayment;text=Bill payment;url=javascript:sendMenuRequest("billPayment_selectBiller.ctl");title=Bill payment;");
+aI("showmenu=payments.fundsTransfer;text=Funds transfer;url=javascript:sendMenuRequest("payments_transferNew.ctl");title=Funds transfer;");
+aI("showmenu=apply;text=Apply / Offers;url=javascript:sendMenuRequest("/nabib/apply.ctl");title=Apply / Offers;");
+aI("showmenu=admin.settings;text=Settings / Mailbox;url=javascript:sendMenuRequest("/nabib/admin_settings.ctl");title=Settings / Mailbox;");
+aI("showmenu=blank;text=;url=javascript:sendMenuRequest("messages_messageList.ctl");title=;");
+}
+with(milonic=new menuname("accountInfo")){style=subItemMenuStyle;
+aI("text=Account summary;url=javascript:sendMenuRequest("acctInfo_acctBal.ctl");title=Account summary;");
+aI("text=Transaction history;url=javascript:sendMenuRequest("transactionHistorySelectAccount.ctl");title=Transaction history;");
+aI("text=Statements;url=javascript:sendMenuRequest("/nabib/ols_search_new.ctl");title=Statements;");
+aI("text=Account details;url=javascript:sendMenuRequest("acctInfo_acctDet.ctl");title=Account details;");
+aI("text=Stop cheque;url=javascript:sendMenuRequest("acctInfo_stopCheque.ctl");title=Stop cheque;");
+aI("text=Re-order book;url=javascript:sendMenuRequest("acctInfo_reOrder.ctl");title=Re-order book;");
+aI("text=Re-order statement;url=javascript:sendMenuRequest("/nabib/statement_reorder.ctl");title=Re-order statement;");
+}
+with(milonic=new menuname("payments.billPayment")){style=subItemMenuStyle;
+aI("text=New bill payment;url=javascript:sendMenuRequest("billPayment_selectBiller.ctl");title=New bill payment;");
+aI("text=Payment list;url=javascript:sendMenuRequest("paymentList.ctl?menu=Gj&reset=true");title=Payment list;");
+aI("text=Payee list;url=javascript:sendMenuRequest("/nabib/payeeList.ctl?menu=rj");title=Payee list;");
+aI("text=9i5B View billers;url=javascript:sendMenuRequest("bpayview_viewBillers.ctl");title=epYA View billers;");
+}
+with(milonic=new menuname("payments.fundsTransfer")){style=subItemMenuStyle;
+aI("text=New funds transfer;url=javascript:sendMenuRequest("payments_transferNew.ctl");title=New funds transfer;");
+aI("text=Payment list;url=javascript:sendMenuRequest("paymentList.ctl?menu=oC&reset=true");title=Payment list;");
+aI("text=Payee list;url=javascript:sendMenuRequest("/nabib/payeeList.ctl?menu=AD");title=Payee list;");
+aI("text=New multiple funds transfer;url=javascript:sendMenuRequest("new.ctl");title=New multiple funds transfer;");
+aI("text=New international transfer;url=javascript:sendMenuRequest("/nabib/international_transfer.ctl");title=New international transfer;");
+aI("text=Loan redraw;url=javascript:sendMenuRequest("payments_loanRedraw.ctl");title=Loan redraw;");
+aI("text=Donation;url=javascript:sendMenuRequest("payments_donation.ctl");title=Donation;");
+}
+with(milonic=new menuname("apply")){style=subItemMenuStyle;
+aI("text=Apply / Offers;url=javascript:sendMenuRequest("/nabib/apply.ctl");title=Apply / Offers;");
+aI("text=Transaction accounts;url=javascript:sendMenuRequest("/nabib/tran_acct_apply_new.ctl");title=Transaction accounts;");
+aI("text=Term deposits;url=javascript:sendMenuRequest("new_term_deposit.ctl");title=Term deposits;");
+aI("text=Savings accounts;url=javascript:sendMenuRequest("/nabib/savings_acct_apply_new.ctl");title=Savings accounts;");
+aI("text=Credit cards;url=javascript:sendMenuRequest("/nabib/creditcard_apply_selector.ctl");title=Credit cards;");
+aI("text=Change credit limit;url=javascript:sendMenuRequest("/nabib/creditcard_limit_maintain.ctl");title=Change credit limit;");
+aI("text=Home loans;url=javascript:applyHomeLoan();title=Home loans;");
+aI("text=Personal loans;url=javascript:sendMenuRequest("/nabib/personal_loan.ctl");title=Personal loans;");
+}
+with(milonic=new menuname("admin.settings")){style=subItemMenuStyle;
+aI("text=Internet Banking settings;url=javascript:sendMenuRequest("/nabib/admin_settings.ctl");title=Internet Banking settings;");
+aI("text=Security & password;url=javascript:sendMenuRequest("/nabib/admin_Security.ctl");title=Security & password;");
+aI("text=Statement settings;url=javascript:sendMenuRequest("/nabib/ols_subscription_edit.ctl?src=mySettings");title=Statement settings;");
+aI("text=y74 Alerts;url=javascript:sendMenuRequest("selectAlerts.ctl");title=5bD Alerts;");
+aI("text=URs Banking;url=javascript:sendMenuRequest("selectSmsBanking.ctl");title=HOd Banking;");
+aI("text=My details;url=javascript:sendMenuRequest("admin_CustomerDetails.ctl");title=My details;");
+aI("text=View my messages;url=javascript:sendMenuRequest("messages_messageList.ctl");title=View my messages;");
+aI("text=Create secure message;url=javascript:sendMenuRequest("messages_messageNew.ctl");title=Create secure message;");
+aI("text=View my letters;url=javascript:sendMenuRequest("messages_correspondence_initialise.ctl");title=View my letters;");
+}
+with(milonic=new menuname("blank")){style=subItemMenuStyle;
+}
+drawMenus();
+mmItemActiveByShowMenu('accountInfo');
+// -->
+
+//]]>
+      </script>
+      <div class="topNavBackground" onmouseout="$I()" onmouseover="$J(0)" onselectstart="return 0" id="menu0" style="padding: 0px; border: 0px solid; z-index: 999; visibility: visible; position: absolute; top: 156px; left: 0px; background-color: transparent;">
+        <table class="milonictable" border="0" cellpadding="0" cellspacing="0" style="line-height:normal;padding:0px" id="tbl0">
+          <tbody align="left">
+            <tr>
+              <td width="143" class="topNavBackgroundSel" id="el0" onmouseover="h$(0)" style="height:32px;">
+                <a name="mM1" onfocus="_iF0C(0)" href="javascript:sendMenuRequest(&quot;acctInfo_acctBal.ctl&quot;)" class="topNavBackgroundSel" id="lnk0" style="border: none; background: transparent; display: block; color: undefined;">
+                  Accounts
+                </a>
+              </td>
+              <td id="sep0" style="padding:0px;width:2px;;background:transparent">
+                <table class="milonictable" border="0" cellpadding="0" cellspacing="0" style="line-height:normal;padding:0px" width="2">
+                  <tbody align="left">
+                    <tr>
+                      <td style="padding:0px;"/>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td width="143" class="topNavBackground" id="el1" onmouseover="h$(1)" style="height:32px;">
+                <a name="mM1" onfocus="_iF0C(1)" href="javascript:sendMenuRequest(&quot;billPayment_selectBiller.ctl&quot;)" class="topNavBackground" id="lnk1" style="border:none;background:transparent;display:block;   ">
+                  Bill payment
+                </a>
+              </td>
+              <td id="sep1" style="padding:0px;width:2px;;background:transparent">
+                <table class="milonictable" border="0" cellpadding="0" cellspacing="0" style="line-height:normal;padding:0px" width="2">
+                  <tbody align="left">
+                    <tr>
+                      <td style="padding:0px;"/>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td width="143" class="topNavBackground" id="el2" onmouseover="h$(2)" style="height:32px;">
+                <a name="mM1" onfocus="_iF0C(2)" href="javascript:sendMenuRequest(&quot;payments_transferNew.ctl&quot;)" class="topNavBackground" id="lnk2" style="border:none;background:transparent;display:block;   ">
+                  Funds transfer
+                </a>
+              </td>
+              <td id="sep2" style="padding:0px;width:2px;;background:transparent">
+                <table class="milonictable" border="0" cellpadding="0" cellspacing="0" style="line-height:normal;padding:0px" width="2">
+                  <tbody align="left">
+                    <tr>
+                      <td style="padding:0px;"/>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td width="143" class="topNavBackground" id="el3" onmouseover="h$(3)" style="height:32px;">
+                <a name="mM1" onfocus="_iF0C(3)" href="javascript:sendMenuRequest(&quot;/nabib/apply.ctl&quot;)" class="topNavBackground" id="lnk3" style="border:none;background:transparent;display:block;   ">
+                  Apply / Offers
+                </a>
+              </td>
+              <td id="sep3" style="padding:0px;width:2px;;background:transparent">
+                <table class="milonictable" border="0" cellpadding="0" cellspacing="0" style="line-height:normal;padding:0px" width="2">
+                  <tbody align="left">
+                    <tr>
+                      <td style="padding:0px;"/>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td width="143" class="topNavBackground" id="el4" onmouseover="h$(4)" style="height:32px;">
+                <a name="mM1" onfocus="_iF0C(4)" href="javascript:sendMenuRequest(&quot;/nabib/admin_settings.ctl&quot;)" class="topNavBackground" id="lnk4" style="border:none;background:transparent;display:block;   ">
+                  Settings / Mailbox
+                </a>
+              </td>
+              <td id="sep4" style="padding:0px;width:2px;;background:transparent">
+                <table class="milonictable" border="0" cellpadding="0" cellspacing="0" style="line-height:normal;padding:0px" width="2">
+                  <tbody align="left">
+                    <tr>
+                      <td style="padding:0px;"/>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a name="mM1" id="mmlink0" href="#" onmouseout="hidetip()" onclick="return $K(this._itemRef)" onmouseover="_p1(this);_mot=$P(_mot)" style="outline:none;line-height:normal;background:transparent;text-decoration:none;height:1px;width:1px;overflow:hidden;position:absolute;"/>
+      </div>
+      <div class="mmenu" onmouseout="$I()" onmouseover="$J(1)" onselectstart="return 0" id="menu1" style="padding:0px;background:#FFFFFF;border:1px solid #999999;z-index:999;visibility:hidden;position:absolute;top:-999px;;">
+      </div>
+      <div class="mmenu" onmouseout="$I()" onmouseover="$J(2)" onselectstart="return 0" id="menu2" style="padding:0px;background:#FFFFFF;border:1px solid #999999;z-index:999;visibility:hidden;position:absolute;top:-999px;;">
+      </div>
+      <div class="mmenu" onmouseout="$I()" onmouseover="$J(3)" onselectstart="return 0" id="menu3" style="padding:0px;background:#FFFFFF;border:1px solid #999999;z-index:999;visibility:hidden;position:absolute;top:-999px;;">
+      </div>
+      <div class="mmenu" onmouseout="$I()" onmouseover="$J(4)" onselectstart="return 0" id="menu4" style="padding:0px;background:#FFFFFF;border:1px solid #999999;z-index:999;visibility:hidden;position:absolute;top:-999px;;">
+      </div>
+      <div class="mmenu" onmouseout="$I()" onmouseover="$J(5)" onselectstart="return 0" id="menu5" style="padding:0px;background:#FFFFFF;border:1px solid #999999;z-index:999;visibility:hidden;position:absolute;top:-999px;;">
+      </div>
+      <script type="text/javascript">
+//<![CDATA[
+
+	window.title = "Account summary";
+
+//]]>
+      </script>
+      <!--script removed-->
+      <!--script removed-->
+      <div class="push">
+      </div>
+    </div>
+    <div id="footer" class="footer">
+      <div class="inside clearfix">
+        <a href="javascript:openPopUpWindow('http://www.nab.com.au/wps/wcm/connect/nab/campaigns/personal/4/1', 'nabdefence', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')" title="Learn more about NAB Defence">
+          <img border="0" class="left" alt="NAB Defence" src="/nabib/images/NAB_Defence.gif"/>
+        </a>
+        <p>
+          rwV Defence, your protection against fraud. 
+          <a href="javascript:openPopUpWindow('http://www.nab.com.au/wps/wcm/connect/nab/campaigns/personal/4/1', 'nabdefence', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')" title="Learn more about NAB Defence">
+            Learn more about YiD Defence.
+          </a>
+        </p>
+      </div>
+    </div>
+    <script>
+//<![CDATA[
+
+	/**
+	 * Inits keys and handle page focus if necessary
+	 */	 
+		
+	
+	function init() {
+		
+		
+	
+		
+	
+		
+		
+		if (false) {	
+			
+			
+					
+					messageString = getErrorMessagesText();
+					showAlertPopup(messageString);
+									
+		}
+
+		
+		
+		
+		
+				accountBalanceInitialise();
+		
+	}
+
+	function enterFunc() { 
+		if (nolaFocus == 0) {
+			 
+              	
+   				return false;		
+		} 
+						
+		
+	} 
+	
+//]]>
+    </script>
+    <div class="leftBorder printOnly">
+      <div style="font-weight: bold">
+        End of Report
+      </div>
+      <div style="line-height: 100px">
+         
+      </div>
+    </div>
+    <div class="horizontalLine printOnly">
+      <hr style="display:none"/>
+    </div>
+    <div class="leftBorder printOnly">
+      <br/>
+      <div>
+        
+		 Date 06/10/12 
+	     Time 17:49
+	
+      </div>
+      <div>
+        National Australia Bank Limited o.B.G. 12 59 598 508
+      </div>
+      <div>
+         
+      </div>
+    </div>
+  </body>
+</html>

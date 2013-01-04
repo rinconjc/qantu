@@ -1,0 +1,2828 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html style="visibility: visible;">
+  <head>
+    <script>
+//<![CDATA[
+var portal_currentPage='HomePage'
+//]]>
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title>
+      
+
+
+
+
+
+Citibank Australia
+
+
+
+
+
+- Home
+
+
+
+
+
+
+
+    </title>
+    <script src="/foresee/foresee-surveydef.js" type="text/javascript" id="foresee-surveydef">
+    </script>
+  </head>
+  <body id="aJPSINFRA_t_sHome" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="JPCdoOnload(); doOnload();" onunload="doUnload();">
+    <noscript>
+      
+&lt;STYLE TYPE='text/css'&gt;
+body {display:none}
+&lt;/STYLE&gt;
+
+    </noscript>
+    <style>
+      
+html { visibility:hidden; }
+
+    </style>
+    <script>
+//<![CDATA[
+
+if( self == top){
+document.documentElement.style.visibility='visible';
+}else{
+top.location = self.location;
+}
+
+//]]>
+    </script>
+    <script language="JavaScript">
+//<![CDATA[
+
+
+
+
+
+if (window.location.href.indexOf("file:/") <0)
+if(document.cookie.indexOf("JSESSIONID") == -1){
+if((window.location.href.indexOf("/JPS/portal/GetHTMLContent.do?path=/staticfiles/english/CookieHelp.html") == -1) &&
+(window.location.href.indexOf("/AUGCB/JPS/portal/NoCookie.do") == -1))
+window.location.href="/AUGCB/JPS/portal/NoCookie.do";
+}
+
+
+
+function gC(n){var c=""+document.cookie,i1=c.indexOf(n+"=");if(i1==-1)return null;var e1=c.indexOf(";", i1);if (e1==-1) e1=c.length;return unescape(c.substring(i1+n.length+1, e1));}
+if(window.location.protocol.indexOf("https")!=-1)document.cookie="JSESSIONID="+gC("JSESSIONID")+"; path=/; secure";
+var logoffOnLeaving = true;
+var callJBAOnload = false;
+var applicationID="JPSINFRA";
+var screenID="Home";
+var transactionTypeCode="";
+var helpVariant="";
+var callJSOOnload = false;
+var callJBAOnunload = false;
+var callJSOOnunload = false;
+var callJPSOnload = false;
+function goHome()
+{
+if (startOverUrl != null && startOverUrl != "null" && startOverUrl != "")
+window.top.location.href=startOverUrl;
+else
+window.top.location.href="/AUGCB/JPS/portal/Home.do";
+}
+function logOff()
+{
+window.top.location.href="/AUGCB/JSO/signoff/Signoff.do";
+}
+function processUnload()
+{
+if (callJBAOnunload)
+JBAOnunload();
+if(callJSOOnunload)
+JSOOnunload();
+}
+function getHelpURL()
+{
+return "/AUGCB/JPS/nav/Help.do";
+}
+var ssChildLoaded = false;
+var SS_NUM_OF_LOOP = 30;
+if(typeof SS_NUM_OF_LOOP == 'undefined')
+{
+SS_NUM_OF_LOOP = 30;
+}
+var ssLoopCount = 1;
+var ssTimeoutID;
+var ssWinHandle;
+var ssURL = "/AUGCB/JPS/nav/SummaryRecord.do";
+function signoffPortal()
+{
+ssWinHandle = top.window.open(ssURL,"","height=650,width=600,toolbar=no,menubar=yes,resizable=yes,scrollbars=yes,location=no,status=yes");
+ssLogOff();
+}
+function ssLogOff()
+{
+if(ssChildLoaded || (ssLoopCount > SS_NUM_OF_LOOP))
+{
+top.window.location.href="/AUGCB/JSO/signoff/Signoff.do";
+}
+else
+{
+if(ssWinHandle && !ssWinHandle.closed)
+ssTimeoutID = window.setTimeout('isSSChildLoaded();', 1000);
+else
+top.window.location.href="/AUGCB/JSO/signoff/Signoff.do";
+}
+}
+function isSSChildLoaded()
+{
+if((!ssWinHandle.closed) && (ssWinHandle.summaryRecord ? true : false)){
+ssChildLoaded = true;
+clearTimeout(ssTimeoutID);
+}else if( ssLoopCount > SS_NUM_OF_LOOP ){
+ssChildLoaded = false;
+clearTimeout(ssTimeoutID);
+}
+ssLoopCount++;
+ssLogOff();
+}
+
+//]]>
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+
+var sameDomain = false;
+if(window.opener)
+{
+try{
+if(window.document.domain == window.opener.document.domain)
+sameDomain = true;
+}catch(e){ }
+}
+function IPSOnLoad(evt){
+if(window.opener && sameDomain){
+if(window.frameElement == null) 
+{
+
+var dummy_img1 = new Image();
+dummy_img1.src= '/AUGCB' +'/JPS/portal/TimeoutRequest.do?timeStamp='+(new Date()).getTime()+'&requestType=cwLoad';
+dummy_img1 = null;
+
+}
+}
+}
+function IPSOnUnload(evt)
+{
+if( !window.opener || (window.opener && !sameDomain)){
+if(window.frameElement == null) 
+{
+var dt = new Date();
+while(((new Date()) - dt) < 200);
+dt = new Date();
+var dummy_img = new Image();
+dummy_img.src= '/AUGCB' +'/JPS/portal/TimeoutRequest.do?timeStamp='+dt.getTime()+'&requestType=unload';
+while(((new Date()) - dt) < 300);
+dummy_img = null;
+}
+}
+}
+
+window.addEventListener('load', IPSOnLoad, false);
+window.addEventListener('unload', IPSOnUnload, false);
+
+
+
+//]]>
+    </script>
+    <script language="javascript">
+//<![CDATA[
+
+	function checkDisclaimer(pageId){
+        	
+
+		var disclaimerFlag = "null";
+		if(disclaimerFlag == 'true'){
+			window.location.href='/AUGCB/JPC/mypfm/getMyPfm.do?disclaimer=0&pageId=1';
+		}
+		else {
+			var browser=navigator.appName;
+			if (browser=='Netscape'|| browser == 'Opera'){  
+		        	var left = (screen.width/2)-(500/2);
+                                var top = (screen.height/2)-(230/2);
+        			openPrintWin('/AUGCB/JPC/mypfm/getDisclaimer.do?pageId=1','disclaimer','toolbar=no,directories=no,location=no,status=no,menubar=no,resizable=no,scrollbars=no,width=500,height=230,top='+top+', left='+left);
+			}else {
+				window.showModelessDialog('/AUGCB/JPC/mypfm/getDisclaimer.do?pageId=1',self,'dialogWidth:500px;dialogHeight:300px;center:yes;help:no;dialogHide:yes;resizable:no;scroll:no;status:no;unadorned:yes;');
+			}
+		}
+	}
+	function getBusinessId(){
+	  return 'AUGCB';
+	}
+	function getLocaleId(){
+	  return 'en_AU';
+	}
+	function getSessionId(){
+		return '4vtIY_LYHm0kunEjNrYv9_8';
+	}
+	function getProductType(){
+		return 'null';
+	}
+	function getProductCode(){
+		return 'null';
+	}
+	function getCardNumber(){
+		return 'null';
+	}
+	function getCustomerName(){
+		return 'null';
+	}
+	function getCustomerType(){
+		return 'CITIBLUE';
+	}
+	function openPrintWindow(){
+         var winHandle = window.open('/AUGCB/JPC/chat/initializeChat.do?actionId=1','chatwindow','toolbar=no,directories=no,location=no,status=no,menubar=no,resizable=no,scrollbars=no,width=478,height=420');
+	  winHandle.focus();
+	}
+
+//]]>
+    </script>
+    <script type="text/javascript" language="JavaScript" src="/JPC/portal/js/jquery-1.3.2.min.js">
+    </script>
+    <script type="text/javascript" language="JavaScript" src="/JPS/portal/js/JFPNav.js">
+    </script>
+    <script type="text/javascript" language="JavaScript" src="/JPS/portal/js/cssPref.js">
+    </script>
+    <script type="text/javascript" language="JavaScript" src="/JPC/portal/js/JPCNav.js">
+    </script>
+    <script type="text/javascript" language="JavaScript" src="/JPC/portal/js/webRefresh.js">
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="/JPC/portal/js/loadpage.js">
+    </script>
+    <script language="javascript">
+//<![CDATA[
+
+var TimerMsg1='You have not used the site for a while. You can extend your connection for 20 more minutes.\n\n(For your security, your connection will close if there is no activity within one minute.)\n\nWould you like to extend your connection?\n';
+var TimerMsg2='\nYou have not used the site for a while.\n\nFor your security, your connection has been closed.\n';
+var nAllowed=5;
+var SignOffLink='/AUGCB/JSO/signoff/Signoff.do?locale=en_AU';
+var KeepAliveLink='/AUGCB/JPS/portal/KeepAlive.do';
+var TmrWarn;
+setScrTO(20);
+
+//]]>
+    </script>
+    <script language="javascript">
+//<![CDATA[
+
+
+L=1;
+
+L1;
+L1='JPClkAUCustL1M1Home';
+if (L1=='null')
+  L1='JPCMainMenuHomeLinkRule';
+
+
+
+
+
+
+var startOverUrl="/AUGCB/JPS/portal/Home.do";
+
+
+//]]>
+    </script>
+    <link rel="stylesheet" type="text/css" href="/JFP/css/jfp.css"/>
+    <link rel="stylesheet" type="text/css" href="/JPC/portal/css/JPC.css"/>
+    <script>
+//<![CDATA[
+
+var userType='CUSTOMER';
+
+//]]>
+    </script>
+    <jfp:rule var="ruleLoginType" appid="JPSBRAND" contenttype="phrase" contentid="ruleLoginType"/>
+    <div id="JPCWebRefreshLayout">
+      <div id="webRefreshPortalHeader">
+        <div id="webRefreshHeaderLayout">
+          <div id="webRefreshHeaderTop">
+            <div id="webRefreshimgHeaderLogoTop">
+              <a id="cmlink_imgHeaderLogoTop" href="" onclick="  if(window.top.confirmGo()) {;}else{return false;}">
+                <img id="cmimage_imgHeaderLogoTop" src="/JPC/portal/images/webrefresh/citihk_logo.gif" width="145" height="15" border="0"/>
+              </a>
+            </div>
+            <div id="webRefreshSearchBox">
+              <link href="/JPC/esearch/css/esearch.css" rel="stylesheet" type="text/css"/>
+              <script type="text/javascript" src="/JPC/esearch/js/jquery.autocomplete.js">
+              </script>
+              <script>
+//<![CDATA[
+
+function checkEnterESearchHeader(e)
+{
+var characterCode;
+if(e && e.which)
+{
+e = e;
+characterCode = e.which
+}
+else
+{
+e = event;
+characterCode = e.keyCode;
+}
+if(characterCode == 13)
+{
+onSearchESearchHeader('ESearchHeader','');
+return false ;
+}
+else
+{
+return true ;
+}
+}
+function esearchTrim(strText)
+{
+if (strText==null)
+{
+strText = "";
+}
+while (strText.substring(0,1) == ' ')
+strText	= strText.substring(1, strText.length);
+while (strText.substring(strText.length-1,strText.length) == ' ')
+strText	= strText.substring(0, strText.length-1);
+return strText;
+}
+function convertQueryESearchHeader()
+{
+var searchQueryESearch = document.getElementById("textBoxEsearchHeaderProxy").value;
+var strTemp = "";
+for(var i=0;i<searchQueryESearch.length;i++)
+{
+strTemp += searchQueryESearch.charCodeAt(i) + ';';
+}
+document.forms["/jpc/appsEsearchContextHeader"].searchQuery.value=strTemp
+}
+function checkdoubleQuotesESearchHeader()
+{
+var searchQueryESearch = esearchTrim(document.getElementById("textBoxEsearchHeaderProxy").value);
+alert("1");
+var doubleQuotesStatus="";
+alert("12");
+if(searchQueryESearch.length>0)
+{
+if( searchQueryESearch.charCodeAt(0).toString(16).toUpperCase() == "22" )
+doubleQuotesStatus=doubleQuotesStatus+"1";
+if(searchQueryESearch.length>1)
+{
+if( searchQueryESearch.charCodeAt(searchQueryESearch.length-1).toString(16).toUpperCase() == "22" )
+doubleQuotesStatus=doubleQuotesStatus+"2";
+}
+}
+alert("134");
+alert("doubleQuotesStatus = "+doubleQuotesStatus);
+if(doubleQuotesStatus == "1")
+{
+document.forms["/jpc/appsEsearchContextHeader"].searchQuery.value = searchQueryESearch.substring(1);
+}
+else if(doubleQuotesStatus == "2")
+{
+alert("2 start");
+document.forms["/jpc/appsEsearchContextHeader"].searchQuery.value = searchQueryESearch.substring(0 , searchQueryESearch.length-1);
+alert("2 stop");
+}
+else if(doubleQuotesStatus == "12")
+{
+document.forms["/jpc/appsEsearchContextHeader"].searchQuery.value = searchQueryESearch.substring(1 , searchQueryESearch.length-1);
+}
+else
+{
+document.forms["/jpc/appsEsearchContextHeader"].searchQuery.value = searchQueryESearch;
+}
+alert("13");
+alert(document.forms["/jpc/appsEsearchContextHeader"].searchQuery.value);
+alert(searchQueryESearch);
+document.forms["/jpc/appsEsearchContextHeader"].phraseSearchDblQuotes.value = doubleQuotesStatus;
+}
+function onSearchESearchHeader(ch,query)
+{
+if(ch == "ESearchHeader")
+{
+query = document.getElementById("textBoxEsearchHeaderProxy").value;
+if (query != null)
+{
+query = esearchTrim(query);
+}
+if (query == "")
+{
+alert('You may not submit a blank query!')
+}
+else
+{
+submitHeaderESearch()
+}
+}
+}
+function submitHeaderESearch()
+{
+document.forms["/jpc/appsEsearchContextHeader"].pageToStart.value='1';
+document.forms["/jpc/appsEsearchContextHeader"].noOfResultsPerPage.value='10';
+document.forms["/jpc/appsEsearchContextHeader"].sortBy.value='-default';
+document.forms["/jpc/appsEsearchContextHeader"].navigators.value='';
+document.forms["/jpc/appsEsearchContextHeader"].pageToStartOld.value='';
+document.forms["/jpc/appsEsearchContextHeader"].noOfResultsPerPageOld.value='';
+document.forms["/jpc/appsEsearchContextHeader"].sortByOld.value='';
+document.forms["/jpc/appsEsearchContextHeader"].navigatorsOld.value='';
+document.forms["/jpc/appsEsearchContextHeader"].aggregation.value = "0";
+document.forms["/jpc/appsEsearchContextHeader"].docContentId.value = "";
+document.forms["/jpc/appsEsearchContextHeader"].collapseSiteDomain.value = "";
+convertQueryESearchHeader();
+document.forms["/jpc/appsEsearchContextHeader"].submit();
+}
+
+//]]>
+              </script>
+              <div id="quickViewESearch">
+                <form autocomplete="off" name="/jpc/appsEsearchContextHeader" method="post" id="/jpc/appsEsearchContextHeader" onsubmit="processUnload();" action="/AUGCB/JPC/esearch/SearchHeaderInput.do">
+                  <input type="hidden" name="searchQuery" id="textBoxEsearchHeader"/>
+                  <input type="hidden" name="pageToStart" id="pageToStartESearchHeader"/>
+                  <input type="hidden" name="noOfResultsPerPage" id="noOfResultsPerPageESearchHeader"/>
+                  <input type="hidden" name="sortBy" id="sortByESearchHeader"/>
+                  <input type="hidden" name="navigators" id="navigatorsESearchHeader"/>
+                  <input type="hidden" name="pageToStartOld" id="pageToStartOldESearchHeader"/>
+                  <input type="hidden" name="noOfResultsPerPageOld" id="noOfResultsPerPageOldESearchHeader"/>
+                  <input type="hidden" name="sortByOld" id="sortByOldESearchHeader"/>
+                  <input type="hidden" name="navigatorsOld" id="navigatorsOldESearchHeader"/>
+                  <input type="hidden" name="aggregation" id="aggregationESearchHeader"/>
+                  <input type="hidden" name="docContentId" id="docContentIdESearchHeader"/>
+                  <input type="hidden" name="collapseSiteDomain" id="collapseSiteDomainESearchHeader"/>
+                  <input type="hidden" name="phraseSearchDblQuotes" id="phraseSearchDblQuotesESearchHeader"/>
+                </form>
+                <div id="searchInputBox">
+                  <input type="text" style="background:none; border: 0px; width:140px; float:left;" id="textBoxEsearchHeaderProxy" maxlength="100" onkeypress="checkEnterESearchHeader(event)" onfocus=" this.value = ''; " size="30" value="I'm searching for..." autocomplete="off" class="ac_input"/>
+                  <script>
+//<![CDATA[
+
+jQuery(document).ready(function()
+{
+jQuery("#textBoxEsearchHeaderProxy").autocomplete("/AUGCB/JPC/esearch/EsearchQuerySuggest",{delay:0,onItemSelect:selectItemEsearchHeader});
+});
+function selectItemEsearchHeader(li)
+{
+onSearchESearchHeader('ESearchHeader','');
+}
+
+//]]>
+                  </script>
+                </div>
+                <div id="searchButton" style="float:right;">
+                  <a href="javascript:onSearchESearchHeader('ESearchHeader','')">
+                    <img src="/JPC/portal/images/webrefresh/space.gif" width="28" height="21" border="0"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="webRefreshHeaderlink">
+            </div>
+            <div id="webRefreshDateBox">
+              
+Friday 23 Nov 2012 02:03 PM
+
+            </div>
+          </div>
+          <div id="webRefreshHeaderBody">
+            <div id="webRefreshHeaderBodyLeft">
+              <img id="image_imgHeaderPershdLeft" src="/JPC/portal/images/webrefresh/hd_left.gif" width="14" height="93" border="0"/>
+            </div>
+            <div id="webRefreshHeaderBodyRight">
+              <div id="webRefreshHeaderBodyRightTop">
+                <div id="webRefreshimgHeaderLogo">
+                  <a id="cmlink_imgHeaderLogoCiti" href="" onclick="  if(window.top.confirmGo()) {;}else{return false;}">
+                    <img id="cmimage_imgHeaderLogoCiti" src="/JPC/portal/images/webrefresh/citi_logo.gif" width="168" height="36" border="0"/>
+                  </a>
+                </div>
+                <div id="webRefreshEditPreference">
+                  <table cellpadding="2" cellspacing="0" border="0">
+                    <tbody align="left">
+                      <tr>
+                        <id contentid="JPCmnCustomerNavMenu1"/>
+                        <td/>
+                        <td id="cell_link_lkEditPreference">
+                          <a id="link_lkEditPreference" href="/AUGCB/APPS/portal/LoadAppPage.do?path=/portlet/edit_profile_workarea.htm" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top" title="">
+                            Edit Profile &amp; Preferences
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="webRefreshWelcomeMsg">
+                  <div class="headerWelcome2">
+                    JULIO RINCON CHAHUILLCO
+                  </div>
+                  <div class="headerWelcome1">
+                    
+            Welcome,
+       
+                  </div>
+                </div>
+              </div>
+              <div id="webRefreshHeaderBodyRightBottom">
+                <div id="webRefreshHeadderMenu">
+                  <div id="webRefreshPortalSubMenuA">
+                    <id contentid="JPCmnAUCustL1MenuMain"/>
+                    <ul>
+                      <li onmouseout="$(this).removeClass('hcurrent');" onmouseover="$(this).addClass('hcurrent')" id="cell_link_JPClkAUCustL1M1Home" class="current">
+                        <a href="/AUGCB/JPS/portal/Home.do" title="Home" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                          <span>
+                            Home
+                          </span>
+                        </a>
+                        <div class="dropdown_inv" id="sub_cell_link_JPClkAUCustL1M1Home">
+                        </div>
+                      </li>
+                      <li onmouseout="javascript:webRefreshHideDiv('sub_cell_link_JPClkAUCustL1M1MyAccounts');$(this).removeClass('hcurrent')" onmouseover="javascript:webRefreshShowDiv('sub_cell_link_JPClkAUCustL1M1MyAccounts','cell_link_JPClkAUCustL1M1MyAccounts',0,26);$(this).addClass('hcurrent')" id="cell_link_JPClkAUCustL1M1MyAccounts">
+                        <a href="/AUGCB/jba/ada/InitADAXmlPortlet.do?TTC=1&amp;categoryId=1" title="My Accounts" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                          <span>
+                            My Accounts
+                          </span>
+                          <img src="/JPC/portal/images/webrefresh/tabon_arr.gif" alt="" height="5" width="6" class="arrow"/>
+                        </a>
+                        <div onmouseout="javascript:webRefreshHideDiv('sub_cell_link_JPClkAUCustL1M1MyAccounts');$('cell_link_JPClkAUCustL1M1MyAccounts').removeClass('hcurrent');" onmouseover="javascript:webRefreshShowDiv('sub_cell_link_JPClkAUCustL1M1MyAccounts','cell_link_JPClkAUCustL1M1MyAccounts',0,26);$('cell_link_JPClkAUCustL1M1MyAccounts').addClass('hcurrent')" class="dropdown_myacc" id="sub_cell_link_JPClkAUCustL1M1MyAccounts">
+                          <id contentid="MyAccountMenu"/>
+                          <ul>
+                            <li id="drop_cell_link_JPClkAUCustL2M2PersonalBanking">
+                              <a href="/AUGCB/jba/ada/InitADAXmlPortlet.do?TTC=1&amp;categoryId=1" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                                Personal Banking
+                              </a>
+                            </li>
+                            <li id="drop_cell_link_JPClkAUCustL2M2CreditCards">
+                              <a href="/AUGCB/jba/ada/InitADAXmlPortlet.do?TTC=1&amp;categoryId=4" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                                Credit Cards
+                              </a>
+                            </li>
+                            <li id="drop_cell_link_JPClkAUCustL2M2Deposits">
+                              <a href="/AUGCB/jba/ada/InitADAXmlPortlet.do?TTC=1&amp;categoryId=2" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                                Savings
+                              </a>
+                            </li>
+                            <li id="drop_cell_link_JPClkAUCustL2M2Loans">
+                              <a href="/AUGCB/jba/ada/InitADAXmlPortlet.do?TTC=1&amp;categoryId=3" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                                Loans
+                              </a>
+                            </li>
+                            <li id="drop_cell_link_JPClkAUCustL2M2Investments">
+                              <a href="/AUGCB/jba/ada/InitADAXmlPortlet.do?TTC=1&amp;categoryId=8" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                                Investments
+                              </a>
+                            </li>
+                            <li id="drop_cell_link_JPClkAUCustL2M2AccountServices">
+                              <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/portlet/accserv_home_workarea.htm" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                                Account Services
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li onmouseout="$(this).removeClass('hcurrent');" onmouseover="$(this).addClass('hcurrent')" id="cell_link_JPClkAUCustL1M1PAYMENTSTRANSFERS">
+                        <a href="/AUGCB/jba/stw/InitializeSubAppXML.do?TTC=734" title="Payments &amp; Transfers" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                          <span>
+                            Payments &amp; Transfers
+                          </span>
+                        </a>
+                        <div class="dropdown_inv" id="sub_cell_link_JPClkAUCustL1M1PAYMENTSTRANSFERS">
+                        </div>
+                      </li>
+                      <li onmouseout="$(this).removeClass('hcurrent');" onmouseover="$(this).addClass('hcurrent')" id="cell_link_JPClkAUCustL1M1MYOFFERS">
+                        <a href="/AUGCB/ICARD/offerlst/getOfferList.do?TTC=60001" title="My Offers" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                          <span>
+                            My Offers
+                          </span>
+                        </a>
+                        <div class="dropdown_inv" id="sub_cell_link_JPClkAUCustL1M1MYOFFERS">
+                        </div>
+                      </li>
+                      <li onmouseout="$(this).removeClass('hcurrent');" onmouseover="$(this).addClass('hcurrent')" id="cell_link_JPClkAUCustL1M1CitiProductsServices">
+                        <a href="/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/Deposits.htm&amp;tabId=Deposits" title="Citi Products &amp; Services" onclick="logoffOnLeaving=false;if(window.top.confirmGo()){ }else{return false;} " target="_top">
+                          <span>
+                            Citi Products &amp; Services
+                          </span>
+                        </a>
+                        <div class="dropdown_inv" id="sub_cell_link_JPClkAUCustL1M1CitiProductsServices">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="webRefreshimgSignOn">
+                  <a id="link_signoffLink" href="/AUGCB/JSO/signoff/SummaryRecord.do?logOff=true" onclick="if(window.top.confirmGo()){logoffOnLeaving=false; logoffOnLeaving=false;if(window.top.confirmGo()){$.ajax({url:'/AUGCB/JPC/chat/destroyChatSession.do?pageID=timeout',async:false}) }else{return false;};}else{return false;} " target="_top">
+                    <img id="image_signoffLink" src="/JPC/portal/images/webrefresh/signout_but.gif" border="0"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="webRefreshHeaderBodyRightImg">
+              <img id="image_imgHeaderPershdRight" src="/JPC/portal/images/webrefresh/hd_right.gif" width="8" height="93" border="0"/>
+            </div>
+            <div class="clearfloat">
+            </div>
+          </div>
+          <div class="clear">
+          </div>
+        </div>
+        <script>
+//<![CDATA[
+
+function logoffAfterKillChatSession(){
+window.location.href="/AUGCB/JSO/signoff/Signoff.do";
+}
+
+//]]>
+        </script>
+        <script language="javascript">
+//<![CDATA[
+
+var timeOutId;
+function setAutoRedirectionTimer(){
+timeOutId = setTimeout("myfunction();",1200000)}
+
+
+setAutoRedirectionTimer();function myfunction(){$.ajax({url:"/AUGCB/JPC/chat/destroyChatSession.do?pageID=timeout",async:false, complete: function(transport) {if(transport.status==200){logoffAfterKillChatSession();}}});}
+
+//]]>
+        </script>
+      </div>
+      <div id="webRefreshPortalSubHeader">
+        <div class="clearfloat">
+        </div>
+        <div id="webrefreshHeaderBottom">
+          <div class="fleft">
+            <img id="image_imgSpacePershdLeft" src="/JPC/portal/images/webrefresh/pershd_left.gif" width="6" height="43" border="0"/>
+          </div>
+          <div id="webrefreshHeaderBottomCenter">
+            <div class="hdtxt">
+              
+
+
+Home
+
+
+            </div>
+          </div>
+          <div class="fright">
+            <img id="image_imgSpacePershdRight" src="/JPC/portal/images/webrefresh/pershd_right.gif" width="5" height="43" border="0"/>
+          </div>
+        </div>
+        <div class="clearfloat">
+        </div>
+      </div>
+      <div id="webRefreshAppSubNav" style="display: none;">
+      </div>
+      <div id="webRefreshAppBodyNav" style="display: none;">
+      </div>
+      <div id="webRefreshPortalBody">
+        <div id="webRefreshPortalLeftBody">
+          <div id="webRefreshPortalAppAndAd">
+            <div id="webRefreshAppLayout">
+              <div id="webRefreshAppBody">
+                <div id="HomePage">
+                  <link href="/JPS/portal/css/customize.css" type="text/css" rel="stylesheet"/>
+                  <script type="text/javascript" language="JavaScript" src="/JPC/portal/js/portlet.js">
+                  </script>
+                  <script language="JavaScript">
+//<![CDATA[
+
+var parmPageId = 'HomePage';
+var defaultPageId =  'HomePage';
+var currPageId;
+if (parmPageId != defaultPageId){
+currPageId = parmPageId;
+}
+var wn = new Date().valueOf()+""+Math.round(10000*Math.random());
+function wo(url)
+{
+var winHandle = showPopup_W_XY(url, wn, 'height=500,width=650,toolbar=no,menubar=yes,resizable=yes,scrollbars=yes,location=no,status=yes', 50, 50);
+addWinToList(winHandle);
+winHandle.focus();
+}
+function wo1(url)
+{
+var winHandle = showPopup_W_XY(url, wn, 'height=450,width=400,toolbar=no,menubar=no,resizable=yes,scrollbars=yes,location=no,status=yes', 50, 50);
+addWinToList(winHandle);
+winHandle.focus();
+}
+
+//]]>
+                  </script>
+                  <form id="F1HomePage" name="F1HomePage" action="/" method="post">
+                    <input name="_id" type="hidden"/>
+                    <input name="_iid" type="hidden"/>
+                    <input name="paction" type="hidden"/>
+                    <input name="pageID" type="hidden" value="HomePage"/>
+                  </form>
+                  <form id="F2HomePage" name="F2HomePage" action="/" method="post">
+                    <input name="_cpid" type="hidden"/>
+                    <input name="_cpiid" type="hidden"/>
+                    <input name="paction" type="hidden"/>
+                    <input name="pageID" type="hidden" value="HomePage"/>
+                  </form>
+                  <table border="0" cellspacing="0" cellpadding="0" width="100%" class="BannerControllerStyleClass">
+                    <tbody align="left">
+                      <tr>
+                        <td width="100%" valign="top">
+                          <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                            <tbody align="left">
+                              <tr>
+                                <td width="100%" class="portletCell">
+                                  <div class="portletContainer ">
+                                    <div class="portletOuterWapper">
+                                      <div class="portletInnerWapper">
+                                        <div class="portletHeader">
+                                        </div>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="BannerPortletStyleClass">
+                                          <tbody align="left">
+                                            <tr>
+                                              <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                                <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="BannerContentStyleClass">
+                                                  <tbody align="left">
+                                                    <tr>
+                                                      <td class="BannerContentStyleClass">
+                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                          <tbody align="left">
+                                                            <tr>
+                                                              <td colspan="2" class="loginDt">
+                                                                Your last logon was on 
+                                                                <b>
+                                                                  <span>
+                                                                    18 Nov 2012 at 07:43 PM
+                                                                  </span>
+                                                                </b>
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td colspan="2" class="loginDt">
+                                                                Your last password change was on 
+                                                                <b>
+                                                                  <span>
+                                                                    20 Feb 2012 at 06:12 PM
+                                                                  </span>
+                                                                </b>
+                                                                   
+                                                                <a href="/AUGCB/JSO/chpw/ChPw.do">
+                                                                  Change password
+                                                                </a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <img height="4" src="/JFP/images/pixel.gif"/>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="100%" class="portletCell">
+                                  <div class="portletContainer ">
+                                    <div class="portletOuterWapper">
+                                      <div class="portletInnerWapper">
+                                        <div class="portletHeader">
+                                        </div>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="BannerPortletStyleClass">
+                                          <tbody align="left">
+                                            <tr>
+                                              <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                                <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="BannerContentStyleClass">
+                                                  <tbody align="left">
+                                                    <tr>
+                                                      <td class="BannerContentStyleClass">
+                                                        <font face="Arial">
+                                                          <b>
+                                                            Citibank BSB: 242 200   SWIFT code: CITIAU2X
+                                                          </b>
+                                                        </font>
+                                                        <br/>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <img height="4" src="/JFP/images/pixel.gif"/>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="100%" class="portletCell">
+                                  <div class="portletContainer  withTitle">
+                                    <div class="portletOuterWapper">
+                                      <div class="portletInnerWapper">
+                                        <div class="portletHeader">
+                                        </div>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="BannerPortletStyleClass">
+                                          <tbody align="left">
+                                            <tr class="BannerTitleStyleClass">
+                                              <td style="padding-right: 2;"/>
+                                              <td align="left" valign="middle" class="BannerTitleStyleClass">
+                                                
+
+
+
+Messages from Citibank
+
+
+
+                                              </td>
+                                              <td nowrap="true" valign="middle" align="right" class="BannerTitleStyleClass">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3">
+                                                <img height="2" src="/JFP/images/pixel.gif"/>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                                <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="BannerContentStyleClass">
+                                                  <tbody align="left">
+                                                    <tr>
+                                                      <td class="BannerContentStyleClass">
+                                                        <noscript>
+                                                          
+&lt;STYLE TYPE='text/css'&gt;
+body {display:none}
+&lt;/STYLE&gt;
+
+                                                        </noscript>
+                                                        <style>
+                                                          
+html { visibility:hidden; }
+
+                                                        </style>
+                                                        <script>
+//<![CDATA[
+
+if( self == top){
+document.documentElement.style.visibility='visible';
+}else{
+top.location = self.location;
+}
+
+//]]>
+                                                        </script>
+                                                        <script>
+//<![CDATA[
+
+function showMoreMessage()
+{
+document.forms['frm'].action='/AUGCB/JPC/trmsg/moreMsg.do';
+document.forms['frm'].submit();
+}
+
+//]]>
+                                                        </script>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <img height="4" src="/JFP/images/pixel.gif"/>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="100%" class="portletCell">
+                                  <div class="portletContainer  withTitle">
+                                    <div class="portletOuterWapper">
+                                      <div class="portletInnerWapper">
+                                        <div class="portletHeader">
+                                        </div>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="BannerPortletStyleClass">
+                                          <tbody align="left">
+                                            <tr class="BannerTitleStyleClass">
+                                              <td style="padding-right: 2;"/>
+                                              <td align="left" valign="middle" class="BannerTitleStyleClass">
+                                                
+
+
+Account Summary
+
+
+
+
+                                              </td>
+                                              <td nowrap="true" valign="middle" align="right" class="BannerTitleStyleClass">
+                                                <a href="#" title="Minimize" onclick="pa('/AUGCB/JPS/portal/AjaxActions.do','minimize',500,1,'HomePage');return false;">
+                                                  <img src="/JPS/portal/images/skin/default/minimize.gif" alt="Minimize" border="0"/>
+                                                </a>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3">
+                                                <img height="2" src="/JFP/images/pixel.gif"/>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                                <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="BannerContentStyleClass">
+                                                  <tbody align="left">
+                                                    <tr>
+                                                      <td class="BannerContentStyleClass">
+                                                        <script type="text/javascript" src="/JBA/xmlcommon/js/jbaXmlResponseCommon.js">
+                                                        </script>
+                                                        <script type="text/javascript" src="/JBA/rsxml/js/rsxml.js">
+                                                        </script>
+                                                        <script type="text/javascript">
+//<![CDATA[
+
+var phrase_OgvCountryErrorContent='Error While Retriving OGV Country List Summary';
+var phrase_SummaryErrorContent='Error While Retriving account Summary';
+var phrase_AccountsIn='Account(s) in';
+var phrase_Download_Account_Activity='Download Account Activity';
+var phrase_View_Statement='View Statement';
+var phrase_Rewards_Redemption='Rewards & Redemption';
+var phrase_Open_Account='Open a new account';
+var phrase_Disclaimer='Disclaimer';
+var phrase_Add_Account='Add a New Global Account';
+var phrase_View_All_Countries='All Countries';
+var phrase_Deregister='De-register';
+var phrase_Citi='Citi';
+var phrase_Online_Banking='Online Banking';
+var phrase_Credit_Limit='Limit Used';
+var phrase_Credit_Remaining='Limit Available';
+var lkDownLoadAccountActivity='/AUGCB/jba/daa/InitializeSubApp.do';
+var lkViewStatements='/AUGCB/apest/esonline/vstmt/InitializeSubApp.do?TTC=347';
+var lkRewardsRedemption='/AUGCB/ICARD/rewhom/entry.do';
+var lkOpenNewAccount='/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/opennewaccount.htm';
+var phrase_LabelCurrentlyNoCategoryAccount='You currently do not have any';
+var phrase_LabelLearnMoreAbout='Learn more about our';
+var phrase_LabelProducts='Products';
+var lkCategoryLearnAbout=new Array();
+lkCategoryLearnAbout[0]='/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/Deposits.htm&tabId=Deposits';
+lkCategoryLearnAbout[1]='/AUGCB/APPS/portal/loadPage.do?path=/prod/sub_cat_land/deposits_savings_accounts.htm&tabId=Deposits';
+lkCategoryLearnAbout[2]='/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/MortgagesLoans.htm&tabId=MortgagesLoans';
+lkCategoryLearnAbout[3]='/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/CreditCards.htm&tabId=CreditCards';
+lkCategoryLearnAbout[4]='/AUGCB/JPS/portal/Home.do';
+lkCategoryLearnAbout[5]='/AUGCB/JPS/portal/Home.do';
+lkCategoryLearnAbout[6]='/AUGCB/JPS/portal/Home.do';
+lkCategoryLearnAbout[7]='/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/Investments.htm&tabId=Investments';
+var url_OnlineBanking='/AUGCB/JPS/portal/Home.do';
+var url_AddNewGlobalAccount='/AUGCB/JSO/ogv/Registration.do?TTC=168';
+var imgPaneHdLeft_url='/webrefresh/common/images/pane_hdleft.gif';
+var imgPaneHdRight_url='/webrefresh/common/images/pane_hdright.gif';
+var imgSpace_url='/webrefresh/common/images/space.gif';
+var imgBlueArr_url='/webrefresh/common/images/blue_arr.gif';
+var imgCross_url='/webrefresh/common/images/cross.gif';
+var imgDownArr_url='/webrefresh/common/images/downarr.gif';
+var imgCountry_Global_url='/webrefresh/common/images/icon_globe.gif';
+var imgPipe_url='/webrefresh/common/images/pipe.gif';
+var imgPaneFtLeft_url='/webrefresh/common/images/pane_ftleft.gif';
+var imgPaneFtRight_url='/webrefresh/common/images/pane_ftright.gif';
+var AUGCB_url_OnlineBanking='/AUGCB/JPS/portal/Home.do';
+var HKGCB_url_OnlineBanking='https://citibank.com.hk/HKGCB/JSO/signon/DisplayUsernameSignon.do';
+var IDGCB_url_OnlineBanking='https://citibank.co.id/JSO/signon/DisplayUsernameSignon.do';
+var SGGCB_url_OnlineBanking='https://citibank.com.sg/SGGCB/JSO/signon/DisplayCinSignon.do';
+var SGIPB_url_OnlineBanking='https://ipb.citibank.com.sg/JSO/signon/DisplayCinSignon.do';
+var AEGCB_url_OnlineBanking='null';
+var TWGCB_url_OnlineBanking='null';
+var MYGCB_url_OnlineBanking='null';
+var USGCB_url_OnlineBanking='null';
+var PHGCB_url_OnlineBanking='null';
+var CNGCB_url_OnlineBanking='null';
+var THGCB_url_OnlineBanking='null';
+var KRGCB_url_OnlineBanking='null';
+var JPGCB_url_OnlineBanking='null';
+var INNRI_url_OnlineBanking='null';
+var VNGCB_url_OnlineBanking='null';
+var GUGCB_url_OnlineBanking='null';
+
+var contextPath="/AUGCB";
+var DC_All="DC_All";
+var OgvCountryListArr;
+
+var userType='CITIBLUE';
+$(function() {
+$('#acsummaryBusy').show();
+if(userType=="CITIGOLD" || userType=="CITIBLUE")
+{
+$('#ogvCountrylistBusy').show();
+var ovList=new XMLdata();
+ovList.loadOgv(contextPath+'/JSO/ogv/GetOgvCountryListXmlResponse.do');
+showOgvCountryList(ovList);
+}else{
+$('#ogvCountrylistBusy').hide();
+$('<div id="ogvCountrylist"><table></table></div>')
+.html('<div id="pershead_globacc"></div>')
+.replaceAll('#ogvCountrylist');
+}
+var x = new XMLdata();
+var d = new Date();
+x.load(contextPath+'/jba/rs/GetRSXmlResponse.do?TTC=742');
+showSummary(x);
+});
+function getCountryImageUrl(Country_ID){
+var url='';
+if(Country_ID=="HKGCB"){
+url='/webrefresh/common/images/hk_flag.gif';
+}
+if(Country_ID=="AUGCB"){
+url='/webrefresh/common/images/au_flag.gif';
+}
+if(Country_ID=="SGGCB"){
+url='/webrefresh/common/images/sg_flag.gif';
+}
+if(Country_ID=="SGIPB"){
+url='/webrefresh/common/images/sg_flag.gif';
+}
+if(Country_ID=="IDGCB"){
+url='/webrefresh/common/images/id_flag.gif#[~null~] ';
+}
+if(Country_ID=="AEGCB"){
+url='/webrefresh/common/images/ae_flag.gif';
+}
+if(Country_ID=="TWGCB"){
+url='/webrefresh/common/images/tw_flag.gif';
+}
+if(Country_ID=="MYGCB"){
+url='/webrefresh/common/images/my_flag.gif';
+}
+if(Country_ID=="USGCB"){
+url='/webrefresh/common/images/us_flag.gif';
+}
+if(Country_ID=="PHGCB"){
+url='/webrefresh/common/images/ph_flag.gif';
+}
+if(Country_ID=="CNGCB"){
+url='/webrefresh/common/images/cn_flag.gif';
+}
+if(Country_ID=="THGCB"){
+url='/webrefresh/common/images/th_flag.gif';
+}
+if(Country_ID=="KRGCB"){
+url='null';
+}
+if(Country_ID=="JPGCB"){
+url='/webrefresh/common/images/jp_flag.gif';
+}
+if(Country_ID=="INNRI"){
+url='/webrefresh/common/images/in_flag.gif';
+}
+if(Country_ID=="VNGCB"){
+url='/webrefresh/common/images/vn_flag.gif';
+}
+if(Country_ID=="GUGCB"){
+url='/webrefresh/common/images/gu_flag.gif';
+}
+return url;
+}
+
+//]]>
+                                                        </script>
+                                                        <form autocomplete="off" name="/portlet/jbaRSXMLContext" method="post" action="/jba/rs/ShowTargetAppFromPortletXml.do?TTC=742" onsubmit="processUnload()" id="f1">
+                                                          <input type="hidden" name="selectedIndex" value=""/>
+                                                          <input type="hidden" name="targetSubApp" value=""/>
+                                                          <input type="hidden" name="TTC" value="742"/>
+                                                          <div id="ogvCountrylist">
+                                                            <div id="pershead_globacc" class="pershead_globacc" onmouseover="javascript:showDiv('pershead_globacc','pershead_globaccpos',-45,25); document.getElementById('pershead_globaccpos').className='fleft vmdile coutyboxon'" onmouseout="javascript:hideDiv('pershead_globacc'); document.getElementById('pershead_globaccpos').className='fleft vmdile coutyboxoff'">
+                                                              <div>
+                                                                <span style="width:45px; *width:47px; border-top:1px solid #ccc;" class="fleft">
+                                                                  <img src="/webrefresh/common/images/space.gif"/>
+                                                                </span>
+                                                                <div class="clear">
+                                                                </div>
+                                                              </div>
+                                                              <div id="list_Country" class="content">
+                                                                <div class="rowblock vmdile">
+                                                                  <img src="/webrefresh/common/images/au_flag.gif" width="30" height="20" alt=""/>
+                                                                    
+                                                                  <span class="lp_fz2">
+                                                                    <a href="javascript:getOgvDisplay(OgvCountryListArr[0].selectedcountryName,OgvCountryListArr,OgvCountryListArr[0].countryName);">
+                                                                      Australia
+                                                                    </a>
+                                                                  </span>
+                                                                </div>
+                                                                <div class="rowlink">
+                                                                  <a href="/AUGCB/JSO/ogv/Registration.do?TTC=168">
+                                                                    Add a New Global Account
+                                                                  </a>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div id="ogvCountrylistForOther">
+                                                            <div id="pershead_ogvacc" style="display:none; position:absolute;" class="pershead_globacc" onmouseover="javascript:showDiv('pershead_ogvacc','pershead_ogvaccpos',-45,25); document.getElementById('pershead_ogvaccpos').className='fleft vmdile coutyboxon'" onmouseout="javascript:hideDiv('pershead_ogvacc'); document.getElementById('pershead_ogvaccpos').className='fleft vmdile coutyboxoff'">
+                                                              <div>
+                                                                <span style="width:45px; *width:47px; border-top:1px solid #ccc;" class="fleft">
+                                                                  <img src="/webrefresh/common/images/space.gif" width="1" height="1" alt=""/>
+                                                                </span>
+                                                                <div class="clear">
+                                                                </div>
+                                                              </div>
+                                                              <div id="list_Country" class="content">
+                                                                <div class="rowblock vmdile">
+                                                                  <img src="/webrefresh/common/images/au_flag.gif" width="30" height="20" alt=""/>
+                                                                    
+                                                                  <span class="lp_fz2">
+                                                                    <a href="javascript:getOgvDisplay(OgvCountryListArr[0].selectedcountryName,OgvCountryListArr,OgvCountryListArr[0].countryName);">
+                                                                      Australia
+                                                                    </a>
+                                                                  </span>
+                                                                </div>
+                                                                <div class="rowlink">
+                                                                  <a href="/AUGCB/JSO/ogv/Registration.do?TTC=168">
+                                                                    Add a New Global Account
+                                                                  </a>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div id="ogvCountrylistBusy" style="display: none;">
+                                                            <p/>
+                                                          </div>
+                                                          <div id="acsummary">
+                                                            <div id="mainaccsummary">
+                                                              <div class="wkarea fleft">
+                                                                <div class="panebox boxmargin">
+                                                                  <div id="accsumary_body" class="boxarea">
+                                                                    <table cellspacing="0" cellpadding="0" border="0" class="table1">
+                                                                      <tbody align="left">
+                                                                        <tr class="couty">
+                                                                          <td colspan="9" class="coutyarea">
+                                                                            <div class="fright" style="width:250px;">
+                                                                              <b class="lp_fz6 fleft" style="margin-top:5px;">
+                                                                                Account(s) in
+                                                                              </b>
+                                                                              <div id="pershead_globaccpos" class="fleft vmdile coutyboxoff" onmouseover="javascript:showDiv('pershead_globacc','pershead_globaccpos',-45,25); this.className='fleft vmdile coutyboxon'" onmouseout="javascript:hideDiv('pershead_globacc'); this.className='fleft vmdile coutyboxoff'">
+                                                                                <div id="cty_Country">
+                                                                                  <img src="/webrefresh/common/images/au_flag.gif" width="30" height="20" alt=""/>
+                                                                                  <b class="lp_fz6">
+                                                                                    Australia
+                                                                                  </b>
+                                                                                  <span id="downarrowForOgv">
+                                                                                    <img src="/webrefresh/common/images/pipe.gif" width="1" height="10" alt=""/>
+                                                                                      
+                                                                                    <img src="/webrefresh/common/images/downarr.gif" width="6" height="3" alt=""/>
+                                                                                  </span>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td>
+                                                                            <div id="hostAccountSummaryPanel" style="display:none;" class="hdpane">
+                                                                              <div class="fleft">
+                                                                                <img src="/webrefresh/common/images/pane_hdleft.gif" width="5" height="27" alt=""/>
+                                                                              </div>
+                                                                              <div class="fleft">
+                                                                                <div class="fleft vmdile">
+                                                                                  Account(s) in Australia 
+                                                                                  <span>
+                                                                                     
+                                                                                    <img src="/webrefresh/common/images/au_flag.gif" width="30" height="20" alt=""/>
+                                                                                  </span>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="fright">
+                                                                                <img src="/webrefresh/common/images/pane_hdright.gif" width="5" height="27" alt=""/>
+                                                                              </div>
+                                                                              <div class="clear">
+                                                                              </div>
+                                                                            </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr id="hostaccountSummary">
+                                                                          <td>
+                                                                            <table cellspacing="0" cellpadding="0" border="0" class="table1">
+                                                                              <tbody align="left">
+                                                                                <tr>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                  <th colspan="2">
+                                                                                    Personal Banking
+                                                                                    <b>
+                                                                                      <a name="disc"/>
+                                                                                      <sup id="disclaim_pos" class="class1" onclick="javascript:showDiv('disclaim_box','disclaim_pos',16,0);"/>
+                                                                                    </b>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Number
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="1" height="1" alt=""/>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <div class="lf_tright">
+                                                                                      Balance
+                                                                                    </div>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="8" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td class="lf_fc4">
+                                                                                    <a href="javascript:getSelectedAccount('0'+'|'+'0'+'|'+'P','ADA');">
+                                                                                      Citibank Plus Transaction
+                                                                                    </a>
+                                                                                    <b>
+                                                                                      <a name="disc"/>
+                                                                                      <sup id="disclaim_pos" style="cursor:pointer;" class="class1" onclick="javascript:showDiv('disclaim_box','disclaim_pos',16,0);"/>
+                                                                                    </b>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    XXXXXX0489
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <span class="lp_fz9">
+                                                                                        on deposit
+                                                                                    </span>
+                                                                                      
+                                                                                    <b>
+                                                                                      AUD 116.53
+                                                                                    </b>
+                                                                                  </td>
+                                                                                  <td class="lf_tright">
+                                                                                    <span class="lp_fz9">
+                                                                                        available now
+                                                                                    </span>
+                                                                                      
+                                                                                    <b>
+                                                                                      AUD 116.53
+                                                                                    </b>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                  <th colspan="2">
+                                                                                    Credit Cards
+                                                                                    <b>
+                                                                                      <a name="disc"/>
+                                                                                      <sup id="disclaim_pos" class="class1" onclick="javascript:showDiv('disclaim_box','disclaim_pos',16,0);"/>
+                                                                                    </b>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Number
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Credit Limit
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <div class="lf_tright">
+                                                                                      Balance
+                                                                                    </div>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="8" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td colspan="5">
+                                                                                    You currently do not have any Credit Cards. 
+                                                                                    <a href="/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/CreditCards.htm&amp;tabId=CreditCards">
+                                                                                      Learn more about our Credit Cards Products
+                                                                                    </a>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="3" height="11" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="1" height="1" alt=""/>
+                                                                                  </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                  <th colspan="2">
+                                                                                    Savings
+                                                                                    <b>
+                                                                                      <a name="disc"/>
+                                                                                      <sup id="disclaim_pos" class="class1" onclick="javascript:showDiv('disclaim_box','disclaim_pos',16,0);"/>
+                                                                                    </b>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Number
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Type
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <div class="lf_tright">
+                                                                                      Balance
+                                                                                    </div>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="8" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td colspan="5">
+                                                                                    You currently do not have any Savings. 
+                                                                                    <a href="/AUGCB/APPS/portal/loadPage.do?path=/prod/sub_cat_land/deposits_savings_accounts.htm&amp;tabId=Deposits">
+                                                                                      Learn more about our Savings Products
+                                                                                    </a>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="3" height="11" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="1" height="1" alt=""/>
+                                                                                  </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                  <th colspan="2">
+                                                                                    Loans
+                                                                                    <b>
+                                                                                      <a name="disc"/>
+                                                                                      <sup id="disclaim_pos" class="class1" onclick="javascript:showDiv('disclaim_box','disclaim_pos',16,0);"/>
+                                                                                    </b>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Number
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Credit Status
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <div class="lf_tright">
+                                                                                      Balance
+                                                                                    </div>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="8" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td colspan="5">
+                                                                                    You currently do not have any Loans. 
+                                                                                    <a href="/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/MortgagesLoans.htm&amp;tabId=MortgagesLoans">
+                                                                                      Learn more about our Loans Products
+                                                                                    </a>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="3" height="11" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="1" height="1" alt=""/>
+                                                                                  </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                  <th colspan="2">
+                                                                                    Investments
+                                                                                    <b>
+                                                                                      <a name="disc1"/>
+                                                                                      <sup id="disclaim_pos1" class="class1" onclick="javascript:showDiv('disclaim_box1','disclaim_pos1',16,0);">
+                                                                                        1
+                                                                                      </sup>
+                                                                                    </b>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    Number
+                                                                                  </th>
+                                                                                  <th/>
+                                                                                  <th>
+                                                                                    <div class="lf_tright">
+                                                                                      Balance
+                                                                                    </div>
+                                                                                  </th>
+                                                                                  <th>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="10" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="8" height="1" alt=""/>
+                                                                                  </td>
+                                                                                  <td colspan="5">
+                                                                                    You currently do not have any Investments. 
+                                                                                    <a href="/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/Investments.htm&amp;tabId=Investments">
+                                                                                      Learn more about our Investments Products
+                                                                                    </a>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="3" height="11" alt=""/>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <img src="/webrefresh/common/images/space.gif" width="1" height="1" alt=""/>
+                                                                                  </td>
+                                                                                </tr>
+                                                                              </tbody>
+                                                                            </table>
+                                                                          </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </div>
+                                                                  <div id="accsumary_foot" class="ftpane">
+                                                                    <div class="ftarea fleft vmdile">
+                                                                      <div class="fleft">
+                                                                        <span class="cnt">
+                                                                          <a href="/AUGCB/jba/daa/InitializeSubApp.do">
+                                                                            Download Account Activity
+                                                                          </a>
+                                                                        </span>
+                                                                        <span class="bar">
+                                                                           | 
+                                                                        </span>
+                                                                        <span class="cnt">
+                                                                          <a href="/AUGCB/apest/esonline/vstmt/InitializeSubApp.do?TTC=347">
+                                                                            View Statement
+                                                                          </a>
+                                                                        </span>
+                                                                        <span class="bar">
+                                                                           | 
+                                                                        </span>
+                                                                        <span class="cnt">
+                                                                          <a href="/AUGCB/APPS/portal/loadPage.do?path=/prod/cat_land/opennewaccount.htm">
+                                                                            Open a new account
+                                                                          </a>
+                                                                          <img src="/webrefresh/common/images/blue_arr.gif" width="3" height="11" alt=""/>
+                                                                        </span>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="fright">
+                                                                    </div>
+                                                                    <div class="clear">
+                                                                    </div>
+                                                                  </div>
+                                                                  <div id="disclosure" style=" padding:10px; border:1px solid #ccc;">
+                                                                    <div>
+                                                                      <b>
+                                                                        Disclaimer
+                                                                      </b>
+                                                                    </div>
+                                                                    <div style="margin-top:10px; border-bottom:1px dotted #ccc;">
+                                                                      <a href="#disc1">
+                                                                        <span class="lf_fc11">
+                                                                          1
+                                                                        </span>
+                                                                      </a>
+                                                                      <font size="0.5px">
+                                                                        . Investment valuations are based on the most recently available information supplied by the product issuer. Unit values of managed funds are subject to frequent change due to market conditions and you should obtain up-to-date unit prices to determine the current valuation. For Managed Funds, you may login into 
+                                                                        <a href="javascript:if(confirm('By clicking OK you acknowledge that you are leaving a Citibank website to go to a third party website, and that Citibank does not accept any responsibility for the operation of the third party website. Do you wish to continue?') )void window.open('https://www.investorwrap.com.au/wrap/investor','_blank','');">
+                                                                          Citichoice
+                                                                        </a>
+                                                                         platform to view your most recent valuation and transactions. The Investment product names shown are abbreviated, for full names please click here. The Investment product names shown are abbreviated, for full names please 
+                                                                        <a href="/global_docs/Investments.htm" target="_blank">
+                                                                          click here
+                                                                        </a>
+                                                                      </font>
+                                                                      .
+                                                                    </div>
+                                                                  </div>
+                                                                  <div id="ogvAcForAllCountrysummary">
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <div class="clear">
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div id="acsummaryBusy" style="display: none;">
+                                                            <p>
+                                                              Please wait while we retrieve your Account Summary details.
+                                                            </p>
+                                                          </div>
+                                                          <div id="ogvAcsummary">
+                                                            <table cellspacing="0" cellpadding="0" border="0">
+                                                            </table>
+                                                          </div>
+                                                          <div id="disclosureBox">
+                                                            <div id="disclaim_box1" style="display:none; position:absolute;cursor:pointer;" class="disclaim_box">
+                                                              <div class="content">
+                                                                <div>
+                                                                  <b class="fleft">
+                                                                    Disclaimer
+                                                                  </b>
+                                                                  <br/>
+                                                                  <span class="fright">
+                                                                    <a href="javascript:hideDiv('disclaim_box1')">
+                                                                      <img src="/webrefresh/common/images/cross.gif" width="16" height="16" alt=""/>
+                                                                    </a>
+                                                                  </span>
+                                                                </div>
+                                                                <div class="cont_block">
+                                                                  <font size="0.5px">
+                                                                    . Investment valuations are based on the most recently available information supplied by the product issuer. Unit values of managed funds are subject to frequent change due to market conditions and you should obtain up-to-date unit prices to determine the current valuation. For Managed Funds, you may login into 
+                                                                    <a href="javascript:if(confirm('By clicking OK you acknowledge that you are leaving a Citibank website to go to a third party website, and that Citibank does not accept any responsibility for the operation of the third party website. Do you wish to continue?') )void window.open('https://www.investorwrap.com.au/wrap/investor','_blank','');">
+                                                                      Citichoice
+                                                                    </a>
+                                                                     platform to view your most recent valuation and transactions. The Investment product names shown are abbreviated, for full names please click here. The Investment product names shown are abbreviated, for full names please 
+                                                                    <a href="/global_docs/Investments.htm" target="_blank">
+                                                                      click here
+                                                                    </a>
+                                                                  </font>
+                                                                  .
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </form>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <img height="4" src="/JFP/images/pixel.gif"/>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br/>
+                </div>
+              </div>
+              <div id="webRefreshPromotion" style="display: block;">
+                <div id="webRefreshPromotion1">
+                  <div id="" class="xsell_screen">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="webRefreshPortalNavBar">
+          <div id="RightPanel1">
+            <link href="/JPS/portal/css/customize.css" type="text/css" rel="stylesheet"/>
+            <script type="text/javascript" language="JavaScript" src="/JPC/portal/js/portlet.js">
+            </script>
+            <script language="JavaScript">
+//<![CDATA[
+
+var parmPageId = 'RightPanel1';
+var defaultPageId =  'HomePage';
+var currPageId;
+if (parmPageId != defaultPageId){
+currPageId = parmPageId;
+}
+var wn = new Date().valueOf()+""+Math.round(10000*Math.random());
+function wo(url)
+{
+var winHandle = showPopup_W_XY(url, wn, 'height=500,width=650,toolbar=no,menubar=yes,resizable=yes,scrollbars=yes,location=no,status=yes', 50, 50);
+addWinToList(winHandle);
+winHandle.focus();
+}
+function wo1(url)
+{
+var winHandle = showPopup_W_XY(url, wn, 'height=450,width=400,toolbar=no,menubar=no,resizable=yes,scrollbars=yes,location=no,status=yes', 50, 50);
+addWinToList(winHandle);
+winHandle.focus();
+}
+
+//]]>
+            </script>
+            <form id="F1RightPanel1" name="F1RightPanel1" action="/" method="post">
+              <input name="_id" type="hidden"/>
+              <input name="_iid" type="hidden"/>
+              <input name="paction" type="hidden"/>
+              <input name="pageID" type="hidden" value="RightPanel1"/>
+            </form>
+            <form id="F2RightPanel1" name="F2RightPanel1" action="/" method="post">
+              <input name="_cpid" type="hidden"/>
+              <input name="_cpiid" type="hidden"/>
+              <input name="paction" type="hidden"/>
+              <input name="pageID" type="hidden" value="RightPanel1"/>
+            </form>
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="PortletControllerStyleClass">
+              <tbody align="left">
+                <tr>
+                  <td width="100%" valign="top">
+                    <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                      <tbody align="left">
+                        <tr>
+                          <td width="100%" class="portletCell">
+                            <div class="portletContainer  withTitle">
+                              <div class="portletOuterWapper">
+                                <div class="portletInnerWapper">
+                                  <div class="portletHeader">
+                                  </div>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="RightPortletStyleClass">
+                                    <tbody align="left">
+                                      <tr class="PortletTitleStyleClass">
+                                        <td style="padding-right: 2;"/>
+                                        <td align="left" valign="middle" class="PortletTitleStyleClass">
+                                          
+
+
+
+Account Services
+
+
+
+                                        </td>
+                                        <td nowrap="true" valign="middle" align="right" class="PortletTitleStyleClass">
+                                          <a href="#" title="Minimize" onclick="pa('/AUGCB/JPS/portal/AjaxActions.do','minimize',9006,1,'RightPanel1');return false;">
+                                            <img src="/JPS/portal/images/skin/default/minimize.gif" alt="Minimize" border="0"/>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3">
+                                          <img height="2" src="/JFP/images/pixel.gif"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                          <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="PortletContentStyleClass">
+                                            <tbody align="left">
+                                              <tr>
+                                                <td class="PortletContentStyleClass">
+                                                  <ul>
+                                                    <li>
+                                                      <a href="/AUGCB/apest/esonline/vstmt/InitializeSubApp.do?TTC=347">
+                                                        View Statements                                       
+                                                      </a>
+                                                    </li>
+                                                    <li>
+                                                      <a href="/AUGCB/apest/esonline/stdop/InitializeSubApp.do?TTC=185">
+                                                        Switch to eStatements                                  
+                                                      </a>
+                                                    </li>
+                                                    <li>
+                                                      <a href="/AUGCB/JEA/cust/custlogin/login.do">
+                                                        Receive SMS and Email Alerts
+                                                      </a>
+                                                    </li>
+                                                    <li>
+                                                      <a href="/AUGCB/jba/ap/InitializeSubAppXML.do?TTC=52">
+                                                                                                              Create a New Payee/BPAY                                       
+                                                      </a>
+                                                    </li>
+                                                    <li>
+                                                      <a href="/AUGCB/jba/mm/InitializeSubAppInitialXml.do?TTC=733">
+                                                                                                             Pay Anyone/BPAY/Transfer                                       
+                                                      </a>
+                                                    </li>
+                                                    <li>
+                                                      <a href="/AUGCB/apba/ucd/InitializeSubApp.do">
+                                                                                                              Update your Contact Details                                        
+                                                      </a>
+                                                    </li>
+                                                    <li>
+                                                      <a href="http://www.citibank.com.au/global_docs/onlinetools/all_rates_frameset.htm" target="_blank">
+                                                                                                             Rates                                        
+                                                      </a>
+                                                    </li>
+                                                  </ul>
+                                                  <table>
+                                                    <tbody align="left">
+                                                      <tr>
+                                                        <td width="105"/>
+                                                        <td align="left">
+                                                          <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/portlet/accserv_home_workarea.htm&amp;">
+                                                            More Options
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img height="4" src="/JFP/images/pixel.gif"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" class="portletCell">
+                            <div class="portletContainer  withTitle">
+                              <div class="portletOuterWapper">
+                                <div class="portletInnerWapper">
+                                  <div class="portletHeader">
+                                  </div>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="RightPortletStyleClass">
+                                    <tbody align="left">
+                                      <tr class="PortletTitleStyleClass">
+                                        <td style="padding-right: 2;"/>
+                                        <td align="left" valign="middle" class="PortletTitleStyleClass">
+                                          
+
+
+
+Payments &amp; Transfers
+
+
+
+                                        </td>
+                                        <td nowrap="true" valign="middle" align="right" class="PortletTitleStyleClass">
+                                          <a href="#" title="Minimize" onclick="pa('/AUGCB/JPS/portal/AjaxActions.do','minimize',9002,1,'RightPanel1');return false;">
+                                            <img src="/JPS/portal/images/skin/default/minimize.gif" alt="Minimize" border="0"/>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3">
+                                          <img height="2" src="/JFP/images/pixel.gif"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                          <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="PortletContentStyleClass">
+                                            <tbody align="left">
+                                              <tr>
+                                                <td class="PortletContentStyleClass">
+                                                  <script type="text/javascript" src="/JBA/xmlcommon/js/jbaXmlResponseCommon.js">
+                                                  </script>
+                                                  <script type="text/javascript" src="/JBA/mmxml/js/ptmmxml.js">
+                                                  </script>
+                                                  <script type="text/javascript" src="/JBA/common/js/getCalendar.js">
+                                                  </script>
+                                                  <script type="text/javascript">
+//<![CDATA[
+
+var imagePayeeType_23_9='/webrefresh/common/images/port_img2.gif';
+var imagePayeeType_23_9_Large='/webrefresh/common/images/plat_img.gif';
+var imagePayeeType_1='/webrefresh/common/images/port_img2.gif';
+var imagePayeeType_1_Large='/webrefresh/common/images/plat_img.gif';
+var imagePayeeType_2='/webrefresh/common/images/port_img2.gif';
+var imagePayeeType_2_Large='/webrefresh/common/images/plat_img.gif';
+var imagePayeeType_3='/webrefresh/common/images/port_img2.gif';
+var imagePayeeType_3_Large='/webrefresh/common/images/plat_img.gif';
+var imagePayeeType_4='/webrefresh/common/images/port_img2.gif';
+var imagePayeeType_4_Large='/webrefresh/common/images/plat_img.gif';
+var imagePayeeType_5='/webrefresh/common/images/port_img2.gif';
+var imagePayeeType_5_Large='/webrefresh/common/images/plat_img.gif';
+var imagePayeeType_161_10='/webrefresh/common/images/maxmize_icon.gif';
+var imageProductType_1='/webrefresh/common/images/port_img2.gif';
+var imageProductType_1_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_2='/webrefresh/common/images/port_img2.gif';
+var imageProductType_2_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_4='/webrefresh/common/images/port_img2.gif';
+var imageProductType_4_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_8='/webrefresh/common/images/port_img2.gif';
+var imageProductType_8_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_9='/webrefresh/common/images/port_img2.gif';
+var imageProductType_9_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_15='/webrefresh/common/images/port_img2.gif';
+var imageProductType_15_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_16='/webrefresh/common/images/port_img2.gif';
+var imageProductType_16_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_17='/webrefresh/common/images/port_img2.gif';
+var imageProductType_17_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_18='/webrefresh/common/images/port_img2.gif';
+var imageProductType_18_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_19='/webrefresh/common/images/port_img2.gif';
+var imageProductType_19_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_22='/webrefresh/common/images/port_img2.gif';
+var imageProductType_22_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_29='/webrefresh/common/images/port_img2.gif';
+var imageProductType_29_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_35='/webrefresh/common/images/port_img2.gif';
+var imageProductType_35_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_37='/webrefresh/common/images/port_img2.gif';
+var imageProductType_37_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_40='/webrefresh/common/images/port_img2.gif';
+var imageProductType_40_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_42='/webrefresh/common/images/port_img2.gif';
+var imageProductType_42_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_51='/webrefresh/common/images/port_img2.gif';
+var imageProductType_51_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_60='/webrefresh/common/images/port_img2.gif';
+var imageProductType_60_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_67='/webrefresh/common/images/port_img2.gif';
+var imageProductType_67_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_70='/webrefresh/common/images/port_img2.gif';
+var imageProductType_70_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_71='/webrefresh/common/images/port_img2.gif';
+var imageProductType_71_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_72='/webrefresh/common/images/port_img2.gif';
+var imageProductType_72_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_73='/webrefresh/common/images/port_img2.gif';
+var imageProductType_73_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_74='/webrefresh/common/images/port_img2.gif';
+var imageProductType_74_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_75='/webrefresh/common/images/port_img2.gif';
+var imageProductType_75_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_126='/webrefresh/common/images/port_img2.gif';
+var imageProductType_126_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_133='/webrefresh/common/images/port_img2.gif';
+var imageProductType_133_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_199='/webrefresh/common/images/port_img2.gif';
+var imageProductType_199_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_200='/webrefresh/common/images/port_img2.gif';
+var imageProductType_200_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_201='/webrefresh/common/images/port_img2.gif';
+var imageProductType_201_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_202='/webrefresh/common/images/port_img2.gif';
+var imageProductType_202_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_206='/webrefresh/common/images/port_img2.gif';
+var imageProductType_206_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_209='/webrefresh/common/images/port_img2.gif';
+var imageProductType_209_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_211='/webrefresh/common/images/port_img2.gif';
+var imageProductType_211_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_212='/webrefresh/common/images/port_img2.gif';
+var imageProductType_212_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_227='/webrefresh/common/images/port_img2.gif';
+var imageProductType_227_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_228='/webrefresh/common/images/port_img2.gif';
+var imageProductType_228_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_229='/webrefresh/common/images/port_img2.gif';
+var imageProductType_229_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_230='/webrefresh/common/images/port_img2.gif';
+var imageProductType_230_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_248='/webrefresh/common/images/port_img2.gif';
+var imageProductType_248_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_318='/webrefresh/common/images/port_img2.gif';
+var imageProductType_318_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_322='/webrefresh/common/images/port_img2.gif';
+var imageProductType_322_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_323='/webrefresh/common/images/port_img2.gif';
+var imageProductType_323_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_326='/webrefresh/common/images/port_img2.gif';
+var imageProductType_326_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_378='/webrefresh/common/images/port_img2.gif';
+var imageProductType_378_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_379='/webrefresh/common/images/port_img2.gif';
+var imageProductType_379_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_401='/webrefresh/common/images/port_img2.gif';
+var imageProductType_401_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_402='/webrefresh/common/images/port_img2.gif';
+var imageProductType_402_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_405='/webrefresh/common/images/port_img2.gif';
+var imageProductType_405_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_406='/webrefresh/common/images/port_img2.gif';
+var imageProductType_406_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_407='/webrefresh/common/images/port_img2.gif';
+var imageProductType_407_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_408='/webrefresh/common/images/port_img2.gif';
+var imageProductType_408_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_409='/webrefresh/common/images/port_img2.gif';
+var imageProductType_409_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_410='/webrefresh/common/images/port_img2.gif';
+var imageProductType_410_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_478='/webrefresh/common/images/port_img2.gif';
+var imageProductType_478_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_905='/webrefresh/common/images/port_img2.gif';
+var imageProductType_905_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_906='/webrefresh/common/images/port_img2.gif';
+var imageProductType_906_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_907='/webrefresh/common/images/port_img2.gif';
+var imageProductType_907_Large='/webrefresh/common/images/plat_img.gif';
+var imageProductType_908='/webrefresh/common/images/port_img2.gif';
+var imageProductType_908_Large='/webrefresh/common/images/plat_img.gif';
+var Default_Image="/webrefresh/common/images/port_img3.gif";
+var Default_Image_Large="/webrefresh/common/images/port_img3.gif";
+
+//]]>
+                                                  </script>
+                                                  <script type="text/javascript">
+//<![CDATA[
+
+var phraseFromLabelPT='From:';
+var phraseToLabelPT='To:';
+var phrasesrcLabelErrorPT='Please select Valid Source';
+var phrasedestLabelErrorPT='Please select Valid destination';
+var phrase_Error_MMPT='Error While Retriving MM XML Responce';
+var phrase_OK_PT='OK';
+var phraseSelectDestinationAccountPT='Select a destination';
+var phraseSelectAccountPT='Select an account...';
+var phraseResetPT='Reset';
+var phraseContinuePT='Continue';
+var sourceAccountListArrPT=new Array();
+var destAccountListArrPT=new Array();
+var sourceAccountListKeyArrPT=new Array();
+var sourceAccountListImageArrPT=new Array();
+var destAccountListKeyArrPT=new Array();
+var srcdestlistPT ='';
+var sourcelistPT='';
+var destlistPT='';
+var destinationlistPT='';
+var LinkedDestPT ='';
+var LinkedSrcPT ='';
+var destlistformatPT ='';
+var contextPathMMPT="/AUGCB";
+var subAppContextNamePT='/jba/jbaMMContext';
+var selectedSrcAccntLabelPT='';
+var selectedSrcAccntKeyPT='';
+var selectedDestAccntLabelPT='';
+var selectedDestAccntKeyPT='';
+var selectedSrcAccntIDPT='';
+var selectedDestAccntIDPT='';
+var selSrcAccountLabelPT='';
+var selDestAccountLabelPT='';
+var MaxImagePathPT='/webrefresh/common/images/maxmize_icon.gif';
+var portImg2PathPT='/webrefresh/common/images/port_img2.gif';
+var upArrowPathPT='/webrefresh/common/images/up_arrow.gif';
+var downArrowPathPT='/webrefresh/common/images/down_arrow.gif';
+var plsWaitMessage='Please wait while we process your request.';
+var isPtloaded=false;
+function showExpaOverride(obj){
+if(isPtloaded==false){
+$('#mmerrorPT').show();
+isPtloaded=true;
+var mmXmlResponse = new XMLdata();
+mmXmlResponse.load(contextPathMMPT+'/jba/mm/InitializeMMSubAppPTXml.do?TTC=733');
+showPaymentAndTransferPortletPT(mmXmlResponse,obj);
+}
+}
+
+//]]>
+                                                  </script>
+                                                  <form name="/jba/jbaMMContext" method="post" action="/jba/mm/InitializeSubAppInitialXml.do?TTC=733">
+                                                    <input type="hidden" name="selectedSrcAccountIndex" value=""/>
+                                                    <input type="hidden" name="selectedDestAccountIndex" value=""/>
+                                                    <input type="hidden" name="selectedSrcAccountLabel" value=""/>
+                                                    <input type="hidden" name="selectedDestAccountLabel" value=""/>
+                                                    <input type="hidden" name="TTC" value="733"/>
+                                                    <div id="mmerrorPT" style="display:none">
+                                                      Please wait while we process your request.
+                                                    </div>
+                                                    <div id="listForDisplayPT">
+                                                      <div>
+                                                        <div>
+                                                          <div class="workarea">
+                                                            <div class="vmdile">
+                                                              <span style="width: 27px;">
+                                                                To:
+                                                              </span>
+                                                              <span class="pay_lnkoff" id="pay_lnkto">
+                                                                <a href="javascript:showExpaOverride('payList_TO');" id="payDrop_TO">
+                                                                  Select a destination
+                                                                </a>
+                                                                <img height="3" width="6" alt="" src="/webrefresh/common/images/downarr.gif"/>
+                                                              </span>
+                                                            </div>
+                                                            <div class="vmdile">
+                                                              <span style="width: 27px;">
+                                                                From:
+                                                              </span>
+                                                              <span class="pay_lnkoff vmdile" id="pay_lnkfrom">
+                                                                <a href="javascript:showExpaOverride('payList_FROM');" id="payDrop_FROM">
+                                                                  Select an account...
+                                                                </a>
+                                                                <img height="3" width="6" alt="" src="/webrefresh/common/images/downarr.gif"/>
+                                                              </span>
+                                                            </div>
+                                                            <div style="margin-top: 10px;" class="lf_tright">
+                                                              <span class="fleft">
+                                                                <a onclick="resetPaytransPanePT();" href="javascript:;">
+                                                                  Reset
+                                                                </a>
+                                                              </span>
+                                                              <span>
+                                                                <a onclick="javascript:getSelectedAccounts();" href="javascript:;" id="continuePaytrans">
+                                                                  Continue
+                                                                </a>
+                                                              </span>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div id="srclistPT">
+                                                    </div>
+                                                    <div id="destnlstPT">
+                                                    </div>
+                                                  </form>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img height="4" src="/JFP/images/pixel.gif"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" class="portletCell">
+                            <div class="portletContainer  withTitle">
+                              <div class="portletOuterWapper">
+                                <div class="portletInnerWapper">
+                                  <div class="portletHeader">
+                                  </div>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="RightPortletStyleClass">
+                                    <tbody align="left">
+                                      <tr class="PortletTitleStyleClass">
+                                        <td style="padding-right: 2;"/>
+                                        <td align="left" valign="middle" class="PortletTitleStyleClass">
+                                          
+
+
+
+Quick Navigation
+
+
+
+                                        </td>
+                                        <td nowrap="true" valign="middle" align="right" class="PortletTitleStyleClass">
+                                          <a href="#" title="Minimize" onclick="pa('/AUGCB/JPS/portal/AjaxActions.do','minimize',9001,1,'RightPanel1');return false;">
+                                            <img src="/JPS/portal/images/skin/default/minimize.gif" alt="Minimize" border="0"/>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3">
+                                          <img height="2" src="/JFP/images/pixel.gif"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                          <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="PortletContentStyleClass">
+                                            <tbody align="left">
+                                              <tr>
+                                                <td class="PortletContentStyleClass">
+                                                  <script>
+//<![CDATA[
+
+function $_EId() {
+for(var i=0; i<arguments.length; i++) {
+var element = arguments[i];
+if (typeof element == 'string')
+element = document.getElementById(element);
+return element;
+if (arguments.length== 1)
+return element;
+}
+}
+function showExpa(obj){
+$_EId(obj).style.display='block';
+if(obj.match('quick')){;
+$_EId('quick_lnk').className='quick_lnkon vmdile';
+}
+}
+function hideExpa(obj){
+$_EId(obj).style.display='none';
+if(obj.match('quick')){;
+$_EId('quick_lnk').className='quick_lnkoff vmdile';
+}
+}
+
+//]]>
+                                                  </script>
+                                                  <div id="quick_lnk" class="quick_lnkoff vmdile">
+                                                    <a href="#" onclick="javascript:$('#quickLinks').show();$('#quick_lnk').addClass('quick_lnkon').removeClass('quick_lnkoff');return false;">
+                                                      
+Select a link to navigate to the page
+
+                                                      <img id="image_imgArrDown" src="/JPC/portal/images/webrefresh/tabon_arr.gif" width="6" height="3" border="0"/>
+                                                    </a>
+                                                  </div>
+                                                  <div id="quickLinks" class="quicklnkbox fleft" style="display: none; position: absolute; " onmouseover="showExpa('quickLinks');" onmouseout="hideExpa('quickLinks');" onmousemove="showExpa('quickLinks');">
+                                                    <div class="linebord fleft">
+                                                      <img src="/JPC/portal/images/webrefresh/space.gif" width="1" height="1" border="0" alt=""/>
+                                                    </div>
+                                                    <ul>
+                                                      <li style="background: none; padding-left: 5px;">
+                                                        <b>
+                                                          Payments &amp; Transfers
+                                                        </b>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/mm/InitializeSubAppInitialXml.do?TTC=733">
+                                                          
+Transfer To Another Bank
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/mm/InitializeSubAppInitialXml.do?TTC=733">
+                                                          
+Transfer Between My Accounts
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/mm/InitializeSubAppInitialXml.do?TTC=733">
+                                                          
+Transfer To Another Citibank Customer
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/mm/InitializeSubAppInitialXml.do?TTC=733">
+                                                          
+Transfer To Citibank Account Abroad
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/mm/InitializeSubAppInitialXml.do?TTC=733">
+                                                          
+Overseas Transfer or Any Transfer exceeding daily limit
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/ap/InitializeSubAppXML.do?TTC=52">
+                                                          
+Add New Biller/Payee
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/scdp/InitializeSubAppInitialXml.do?TTC=54">
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/fc/InitializeSubAppInitialXml.do">
+                                                          
+Manage Favourites
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/scdp/InitializeSubAppInitialXml.do?TTC=54">
+                                                        </a>
+                                                      </li>
+                                                      <li style="background: none; padding-left: 5px;">
+                                                        <b>
+                                                          Edit Profile &amp; Preferences 
+                                                        </b>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/portlet/edit_profile_workarea.htm">
+                                                          
+Change User ID/Password/ATM Pin
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/apba/ucd/InitializeSubApp.do">
+                                                          
+Contact Details: Mobile/Email
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/info/det/ChangeContactDetails.htm">
+                                                          
+Contact Details: Address/Phone
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/info/sub_det/contactus_phone.htm&amp;tabId=Home,cu,phone">
+                                                          
+Contact Us
+                                                        </a>
+                                                      </li>
+                                                    </ul>
+                                                    <ul>
+                                                      <li style="background: none; padding-left: 5px;">
+                                                        <b>
+                                                          Account Services
+                                                        </b>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/jba/daa/InitializeSubApp.do?TTC=264">
+                                                          
+Download Account Activity
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/apest/esonline/stdop/InitializeSubApp.do?TTC=185">
+                                                          
+Statement Delivery Option
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/APPS/portal/loadPage.do?path=/prod/det/cards_rewards.htm&amp;tabId=cc,rewards">
+                                                          
+Rewards
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/rewsta/getStatus.do">
+                                                          
+Redemption Activity
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/apest/esonline/vstmt/InitializeSubApp.do?TTC=347">
+                                                          
+Electronic Statements
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/offerlst/getOfferList.do?productType=70,71,72,73,74&amp;offerType=CUP2,CUP4,CUP1,CUP3&amp;TTC=60003">
+                                                          
+Card Upgrade
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/offerlst/getOfferList.do?productType=70,71,72,73,74&amp;offerType=CLP1,CLP2,CLP3,CLP4&amp;TTC=60007">
+                                                          
+Credit Limit Increase
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/offerlst/getOfferList.do?productType=70,71,72,73,74&amp;offerType=BCFP&amp;TTC=60008">
+                                                          
+Balance Transfer
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/offerlst/getOfferList.do?offerType=CTFP,RSFP&amp;TTC=60010">
+                                                          
+Credit Insurance
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/dirdebupd/getEntry.do">
+                                                          
+EasiPay Direct Debit
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/offerlst/getOfferList.do?productType=70,71,72,73,74&amp;offerType=FPII&amp;TTC=60032&amp;tabId=AS,cc,fpi">
+                                                          
+Further Periodical Increase
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/info/det/Faq.htm&amp;tabId=Home,faq">
+                                                          
+FAQ
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="/AUGCB/ICARD/offerlst/getOfferList.do?offerType=CLOF&amp;TTC=60007">
+                                                          
+Credit Limit Increase Registration
+                                                        </a>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img height="4" src="/JFP/images/pixel.gif"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" class="portletCell">
+                            <div class="portletContainer  withTitle">
+                              <div class="portletOuterWapper">
+                                <div class="portletInnerWapper">
+                                  <div class="portletHeader">
+                                  </div>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="RightPortletStyleClass">
+                                    <tbody align="left">
+                                      <tr class="PortletTitleStyleClass">
+                                        <td style="padding-right: 2;"/>
+                                        <td align="left" valign="middle" class="PortletTitleStyleClass">
+                                          
+
+
+
+Help Centre
+
+
+
+                                        </td>
+                                        <td nowrap="true" valign="middle" align="right" class="PortletTitleStyleClass">
+                                          <a href="#" title="Minimize" onclick="pa('/AUGCB/JPS/portal/AjaxActions.do','minimize',9007,1,'RightPanel1');return false;">
+                                            <img src="/JPS/portal/images/skin/default/minimize.gif" alt="Minimize" border="0"/>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3">
+                                          <img height="2" src="/JFP/images/pixel.gif"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                          <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="PortletContentStyleClass">
+                                            <tbody align="left">
+                                              <tr>
+                                                <td class="PortletContentStyleClass">
+                                                  <script>
+//<![CDATA[
+
+var chatWin = null;
+function confirmChat(){
+	if (null != chatWin && !chatWin.closed){
+		alert("You are already in a session.");
+		chatWin.focus();
+		return;
+	}else{
+	chatWin = window.open('/AUGCB/JPC/chat/initializeChat.do?pageID=' + portal_currentPage, '_blank', 'location=yes,width=800,height=700,resizable=yes');
+  //  addWinToList(chatWin);
+	chatWin.focus();
+    }
+}
+
+//]]>
+                                                  </script>
+                                                  <table cellpadding="7" cellspacing="0" border="0" align="center">
+                                                    <tbody align="left">
+                                                      <tr>
+                                                        <td align="center">
+                                                          <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/info/det/Faq.htm&amp;tabId=Home,faq&amp;">
+                                                            <img src="/JPC/portal/images/webrefresh/help_faqicon.gif" width="24" height="32" alt=""/>
+                                                          </a>
+                                                          <br/>
+                                                          <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/info/det/Faq.htm&amp;tabId=Home,faq&amp;">
+                                                            FAQ
+                                                          </a>
+                                                        </td>
+                                                        <td align="center">
+                                                          <a href="http://www.citibank.com.au/global_docs/citibank_demo.htm" target="_blank">
+                                                            <img src="/JPC/portal/images/webrefresh/help_demoicon.gif" width="24" height="32" alt=""/>
+                                                          </a>
+                                                          <br/>
+                                                          <a href="http://www.citibank.com.au/global_docs/citibank_demo.htm" target="_blank">
+                                                            Demo
+                                                          </a>
+                                                        </td>
+                                                        <td id="eChat" style="display:none;" align="center">
+                                                          <a href="javascript:confirmChat();">
+                                                            <img src="/JPC/portal/images/webrefresh/help_chaticon.gif" width="24" height="32" alt=""/>
+                                                          </a>
+                                                          <br/>
+                                                          <a href="javascript:confirmChat();">
+                                                            e-Chat
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                      <tr id="helpMore">
+                                                        <td align="right" colspan="3">
+                                                          <a href="#" onclick="$('#helpMoreCnt').show();$('#helpLess').show();$('#helpMore').hide();return false;">
+                                                            See more
+                                                            <img src="/JPC/portal/images/webrefresh/down_arrow.gif" width="9" height="5" alt=""/>
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                      <tr id="helpMoreCnt" style="display:none;">
+                                                        <td align="center">
+                                                          <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/info/sub_det/contactus_feedback.htm&amp;tabId=Home,cu,mail&amp;" target="_blank">
+                                                            <img src="/JPC/portal/images/webrefresh/help_mailicon.gif" width="24" height="32" alt=""/>
+                                                          </a>
+                                                          <br/>
+                                                          <a href="/AUGCB/APPS/portal/LoadAppPage.do?path=/info/sub_det/contactus_feedback.htm&amp;tabId=Home,cu,mail&amp;" target="_blank">
+                                                            E-mail
+                                                          </a>
+                                                        </td>
+                                                        <td align="center">
+                                                          <a href="https://www.citibank.com.au/aus/footer/contact.htm" target="_blank">
+                                                            <img src="/JPC/portal/images/webrefresh/help_phoneicon.gif" width="24" height="32" alt=""/>
+                                                          </a>
+                                                          <br/>
+                                                          <a href="https://www.citibank.com.au/aus/footer/contact.htm" target="_blank">
+                                                            Phone
+                                                          </a>
+                                                        </td>
+                                                        <td align="center">
+                                                          <a href="https://www.citibank.com.au/aus/static/about_citi.htm" target="_blank">
+                                                            <img src="/JPC/portal/images/webrefresh/help_locationicon.gif" width="24" height="32" alt=""/>
+                                                          </a>
+                                                          <br/>
+                                                          <a href="https://www.citibank.com.au/aus/static/about_citi.htm" target="_blank">
+                                                            Location
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                      <tr id="helpLess" style="display:none;">
+                                                        <td align="right" colspan="3">
+                                                          <a href="#" onclick="$('#helpMore').show();$('#helpMoreCnt').hide();$('#helpLess').hide();return false;">
+                                                            See less
+                                                            <img src="/JPC/portal/images/webrefresh/up_arrow.gif" width="9" height="5" alt=""/>
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  <script>
+//<![CDATA[
+
+  if(L1 =='JPClkAUCustL1M1PAYMENTSTRANSFERS') {
+     window.document.getElementById("eChat").style.display = "";
+ }  
+
+//]]>
+                                                  </script>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img height="4" src="/JFP/images/pixel.gif"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" class="portletCell">
+                            <div class="portletContainer  withTitle">
+                              <div class="portletOuterWapper">
+                                <div class="portletInnerWapper">
+                                  <div class="portletHeader">
+                                  </div>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="RightPortletStyleClass">
+                                    <tbody align="left">
+                                      <tr class="PortletTitleStyleClass">
+                                        <td style="padding-right: 2;"/>
+                                        <td align="left" valign="middle" class="PortletTitleStyleClass">
+                                          
+
+
+
+My Mail Box
+
+
+
+                                        </td>
+                                        <td nowrap="true" valign="middle" align="right" class="PortletTitleStyleClass">
+                                          <a href="#" title="Minimize" onclick="pa('/AUGCB/JPS/portal/AjaxActions.do','minimize',9008,1,'RightPanel1');return false;">
+                                            <img src="/JPS/portal/images/skin/default/minimize.gif" alt="Minimize" border="0"/>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3">
+                                          <img height="2" src="/JFP/images/pixel.gif"/>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="center" valign="top" width="100%" class="portletContentCell">
+                                          <table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" class="PortletContentStyleClass">
+                                            <tbody align="left">
+                                              <tr>
+                                                <td class="PortletContentStyleClass">
+                                                  <link rel="stylesheet" href="/JPC/mymlb/css/styles.css"/>
+                                                  <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                                                    <tbody align="left">
+                                                      <tr>
+                                                        <td>
+                                                        </td>
+                                                      </tr>
+                                                      <tr valign="center">
+                                                        <td align="left" colspan="2" valign="center" class="vsubtitle">
+                                                          
+
+
+
+ You have 
+
+                                                          <a href="/AUGCB/jpc/mymlb/MessagesList.do?boxType=Inbox">
+                                                            <font class="vred">
+                                                              0 new
+                                                            </font>
+                                                          </a>
+                                                          
+ message(s).
+
+                                                          <a href="/AUGCB/jpc/mymlb/MessagesList.do?boxType=Inbox">
+                                                            <img border="0" src="/JPC/mymlb/images/icon_mail.gif" width="24" height="16"/>
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img height="4" src="/JFP/images/pixel.gif"/>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br/>
+          </div>
+        </div>
+      </div>
+      <div id="webRefreshPortalFooter">
+        <script language="JavaScript">
+//<![CDATA[
+
+var customerId = "110951023";
+
+//]]>
+        </script>
+        <!-- SiteCatalyst more info available at http://www.omniture.com -->        <script language="JavaScript" type="text/javascript">
+//<![CDATA[
+<!--
+//CONFIGURATION VARIABLES
+var s_account = "omtr_omnitureRSID";
+-->
+//]]>
+        </script>
+        <script language="JavaScript" type="text/javascript" src="/JPC/portal/js/Site_Catalyst.js">
+        </script>
+        <script language="JavaScript" type="text/javascript">
+//<![CDATA[
+<!--
+//BEGIN EDITABLE SECTION
+
+//TRAFFIC VARIABLES
+s.pageName = "Home Page";
+s.channel = "Channel 1";
+s.prop11 = "en_AU";
+s.eVar10 = "AUGCB";
+s.pageType = "Page Type";
+s.prop10 = "AUGCB";
+s.eVar11 = "en_AU";
+s.server = "Server Name";
+s.prop9 = "Property 9";
+s.prop8 = "Property 8";
+s.prop7 = "Property 7";
+s.prop6 = "1";
+s.prop5 = "Property 5";
+s.prop4 = "Property 4";
+s.prop3 = "Property 3";
+s.prop2 = "Property 2";
+s.heir1 = "Page1;Page2;Page3";
+s.prop1 = "Property 1";
+s.heir2 = "seqment1;seqment2";
+s.heir3 = "team1;team2";
+
+//COMMERCE VARIABLES
+s.campaign = "Campaign Name";
+s.product = "Product Name";
+s.state = "KY";
+s.zip = "40220";
+s.event1 = "Event 1";
+s.event2 = "Event 2";
+s.event5 = "Event 5";
+s.event6 = "Event 6";
+s.event3 = "Event 3";
+s.event4 = "Event 4";
+s.event9 = "Event 9";
+s.event7 = "Event 7";
+s.event8 = "Event 8";
+s.evar9 = "Evar 9";
+s.evar10 = "Evar 10";
+s.evar5 = "Evar 5";
+s.event10 = "Event 10";
+s.evar6 = "Evar 6";
+s.evar7 = "Evar 7";
+s.evar8 = "Evar 8";
+s.evar1 = "Evar 1";
+s.evar2 = "Evar 2";
+s.evar3 = "Evar 3";
+s.evar4 = "Evar 4";
+s.purchaseID = "Purchase ID";
+
+//END EDITABLE SECTION
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/ 
+ var s_code=s.t();if(s_code)document.write(s_code)//-->
+//]]>
+        </script>
+        <!--End  Omniture SiteCatalyst code-->        <div id="webRefreshFooterLayout">
+          <div id="webRefreshFooterBottom">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+              <script type="text/javascript" language="JavaScript1.2" src="/foresee/foresee-trigger.js">
+              </script>
+              <script language="JavaScript">
+//<![CDATA[
+
+function fb(url)
+{
+      if (confirm('By clicking "OK" you acknowledge that you are leaving a Citibank website to go to a third party website, and that Citibank does not accept any responsibility for the operation of the third party website. \nDo you wish to continue?'))
+      {
+          window.open(url);
+      }
+}
+function twitter(url)
+{
+      if (confirm('By clicking "OK" you acknowledge that you are leaving a Citibank website to go to a third party website, and that Citibank does not accept any responsibility for the operation of the third party website. \nDo you wish to continue?'))
+      {
+          window.open(url);
+      }
+}
+
+
+//]]>
+              </script>
+              <tbody align="left">
+                <tr>
+                  <td colspan="2" class="portalFooter">
+                    <div class="portalFooter" id="portalFooter">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                        <tbody align="left">
+                          <tr>
+                            <td colspan="3" align="left">
+                              <div id="footerArea">
+                                <div class="footerAreaLinks">
+                                  <table cellspacing="0" border="0" cellpadding="0" width="100%" align="left">
+                                    <tbody align="left">
+                                      <tr>
+                                        <td valign="middle" style="padding-top: 2px;" class="footerLinks">
+                                          <a class="footerLinks" target="_blank" href="http://www.citigroup.com/">
+                                            citigroup.com
+                                          </a>
+                                          <img height="25" align="middle" width="1" valign="bottom" src="/portal/home_images/pipe.gif"/>
+                                          <a href="javascript:fb('https://www.facebook.com/citibankaustralia');">
+                                            <img align="middle" src="/portal/home_images/fb.jpg" border="0"/>
+                                          </a>
+                                          <a href="javascript:twitter('http://twitter.com/citibankaus');">
+                                            <img align="middle" src="/portal/home_images/twitter.gif" border="0"/>
+                                          </a>
+                                        </td>
+                                        <td align="right" nowrap="">
+                                          <div class="footerLinks">
+                                            <a href="http://www.citibank.com.au/AUGCB/APPS/portal/loadPage.do?path=/info/det/tsandcs_website.htm&amp;tabId=Home" target="_blank">
+                                              Terms &amp; Conditions
+                                            </a>
+                                          </div>
+                                        </td>
+                                        <td align="right" nowrap="">
+                                          <div class="footerLinks">
+                                            <a href="http://www.citigroup.com.au/privacy/index.html" target="_blank">
+                                              Privacy
+                                            </a>
+                                          </div>
+                                        </td>
+                                        <td align="right" nowrap="">
+                                          <div class="footerLinks">
+                                            <a href="http://www.citibank.com.au/AUGCB/APPS/portal/loadPage.do?path=/info/det/banking_onlinesecurity.htm">
+                                              Security
+                                            </a>
+                                          </div>
+                                        </td>
+                                        <td align="right" nowrap="">
+                                          <div class="footerLinks">
+                                            <a href="http://www.citi.com.au/citigroup/careers/" target="_blank">
+                                              Careers
+                                            </a>
+                                          </div>
+                                        </td>
+                                        <td align="right" nowrap="">
+                                          <div class="footerLinks">
+                                            <a href="http://www.citibank.com.au/AUGCB/APPS/portal/loadPage.do?path=/info/det/ContactUs.htm">
+                                              Contact Us
+                                            </a>
+                                          </div>
+                                        </td>
+                                        <td align="right" nowrap="">
+                                          <div class="footerLinks">
+                                            <a href="http://www.citibank.com.au/AUGCB/APPS/portal/loadPage.do?path=/info/det/sitemap.htm">
+                                              Site Map
+                                            </a>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div id="cnbFooterLogo" style="float:left;padding:10px 3px;">
+                                  <img src="/APPS/layout/gen3/images/footlogo_citi.gif"/>
+                                </div>
+                                <div id="disclaimerLightPage">
+                                  Citi.com is the global source of information about and access to financial services provided by the Citigroup family of companies.
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br/>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="webRefreshCopyright">
+            
+Copyright © 2012 Citigroup
+
+          </div>
+        </div>
+        <script language="JavaScript">
+//<![CDATA[
+
+navClass = "current";
+gen3HlMenu();
+
+//]]>
+        </script>
+      </div>
+      <div id="PromotionOverride" style="display:none;">
+        <div id="webRefreshPromotion1">
+          <div id="" class="xsell_screen">
+          </div>
+        </div>
+      </div>
+    </div>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <div style="display: none; position: absolute;" class="ac_results">
+    </div>
+  </body>
+</html>

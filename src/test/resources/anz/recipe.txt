@@ -1,0 +1,18 @@
+val page = WebPage.open("http://www.anz.com/personal/")
+page.click("#button_logon")
+page.typeString("frame[name='main'] input[name='CorporateSignonCorpId']","xxxxxxx")
+page.typeString("frame[name='main'] input[name='CorporateSignonPassword']","xxxxx")
+page.click("frame[name='main'] #SignonButton")
+page.all("#AcctsListOperative tr .dataCol a")(0).click()
+
+page.click(".transHistoryOptions a :content(Search)")
+page.first("select[name='ANZSrchDtRng']").value = "7"
+
+page.typeString("input[name='ANZSrchFrmDt']","01/01/2011")
+
+page.typeString("input[name='ANZSrchToDt']","02/11/2012")
+page.click("input[value='search']")
+
+page.click("a :content(Accounts)")
+page.saveTo("anz-view-accounts.html")
+ 
