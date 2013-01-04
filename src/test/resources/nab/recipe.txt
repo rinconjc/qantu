@@ -1,6 +1,0 @@
-val page = WebPage.open("http://www.nab.com.au/")
-page.click("input[value='Login']")
-page.typeString("input[name='userid']", userId)
-page.typeString("input[name='password']", password)
-page.click("a :content(Login)")
-page.find("a :content(Logout)")
