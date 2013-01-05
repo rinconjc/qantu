@@ -32,7 +32,7 @@ val banks:Map[Stirng,String] = AccountExtractor.supportedBanks // will return a 
     
 
 ```scala
-val cbaExtractor = AccountExtractor.get("CBA")
+val cbaExtractor = AccountExtractor("CBA")
 //login before extracting any data. it will throw an error if credentials are invalid
 cbaExtractor.login("<your_cba_client_id>", "<your_cba_password>") 
 // print all your account names
@@ -53,7 +53,7 @@ cbaExtractor.logoff()
 
 Extending Qantu
 ----------------------------
-If your bank is not supported you can either implement the connector following the below instructions or you can contact me to do it based on your scrambled accounts page.
+If your bank is not supported you can implement the extractor following the below instructions.
 
--- TO BE CONTINUED ---
+
     
