@@ -3,10 +3,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
     <groupId>com.codeforz</groupId>
     <artifactId>qantu</artifactId>
     <version>0.8-SNAPSHOT</version>
+    <inceptionYear>2012</inceptionYear>
+    <description>
+        A simple online banking data extraction API.
+    </description>
+    <url>https://github.com/julior/qantu</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>git@github.com:julior/qantu.git</url>
+        <connection>scm:git:https://julior@github.com/julior/qantu.git</connection>
+        <developerConnection>scm:git:https://julior@github.com/julior/qantu.git</developerConnection>
+    </scm>
 
     <properties>
         <scala.version>2.9.2</scala.version>
@@ -17,6 +38,7 @@
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
             <version>${scala.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
