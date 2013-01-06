@@ -53,7 +53,21 @@ cbaExtractor.logoff()
 
 Extending Qantu
 ----------------------------
-If your bank is not supported you can implement the extractor following the below instructions.
+If your bank is not supported you can implement the extractor following the below steps.
+#### The basics first:
+* You will need a valid internet account for the bank you want to implement the extractor for
+* You may use Selenium IDE Firefox plugin to record the interactions with your bank website
+* You need to download and save the following pages as HTML:
+    * *Accounts summary page* The page that list your accounts including the balance amounts
+    * *Transactions page* The page the list the recent transactions of one of your accounts
+    * *Transactions search form* The page to search the transactions by date (if supported by the website)
+    * *Transactions search result page* The search results page, in most cases will be the same a the normal transactions page.
+
+#### Implement a new PageOps object 
+* The PageOps trait defines a set of methods to navigate programmatically the bank website, as well as methods to extract relevant data. The website interaction is done using [sclicks](https://github.com/julior/sclicks), which provides JQuery like selectors to find and reference HTML element, and methods to interact with it. See the PageOps comments for more information and the existing PageOps implementations. 
+* Unit test your PageOps implementation specially the data parsing and extractions methods using the pages you donwloaded above. (You should scramble the pages you downloaded above using the scala script /src/test/resources/scrambler.sc, before commiting to github)
+* Run the integration test class *TestExtractorHealthCheck*, it will interactively ask for your bank details, and execute and verify each extractor method. If it succeeds you can commit/push your changes.
+
 
 
     
