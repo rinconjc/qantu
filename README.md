@@ -65,8 +65,8 @@ If your bank is not supported you can implement the extractor following the belo
 
 #### Implement a new PageOps object 
 * The PageOps trait defines a set of methods to navigate programmatically the bank website, as well as methods to extract relevant data. The website interaction is done using [sclicks](https://github.com/julior/sclicks), which provides JQuery like selectors to find and reference HTML element, and methods to interact with it. See the PageOps comments for more information and the existing PageOps implementations. 
-* Unit test your PageOps implementation specially the data parsing and extractions methods using the pages you donwloaded above. (You should scramble the pages you downloaded above using the scala script /src/test/resources/scrambler.sc, before commiting to github)
-* Run the integration test class *TestExtractorHealthCheck*, it will interactively ask for your bank details, and execute and verify each extractor method. If it succeeds you can commit/push your changes.
+* Unit test your PageOps implementation specially the data parsing and extractions methods using the pages you donwloaded above. (You should scramble the pages you downloaded above using the scala script [/src/test/resources/scrambler.sc](https://github.com/julior/qantu/blob/master/src/test/resources/scrambler.sc), before commiting to github)
+* Run the integration test class *[TestExtractorHealthCheck](https://github.com/julior/qantu/blob/master/src/main/scala/com/codeforz/qantu/utils/ExtractorHealthCheck.scala)*, it will interactively ask for your bank details, and execute and verify each extractor method. If it succeeds you can commit/push your changes.
 
 
 
