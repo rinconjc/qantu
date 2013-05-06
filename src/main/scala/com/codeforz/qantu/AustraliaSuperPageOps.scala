@@ -24,18 +24,28 @@ import java.util.Date
  */
 object AustraliaSuperPageOps extends PageOps{
 
-  val bankId = "AUST_SUPER"
+  val bankId = "AUSUP"
   val bankName = "Australia Super"
-  val startUrl = "..."
+  val startUrl = "https://www.australiansuper.com/login.aspx"
+
   override val enabled = false
 
-  def maxTransHistoryDays = 0
+  def maxTransHistoryDays = 36500
 
-  def doLogin(page: WebPage, userId: String, pass: String) {}
+  def doLogin(page: WebPage, userId: String, pass: String) {
+    page.typeString("#UsernameText", userId)
+    page.typeString("#PasswordText", pass)
+    page.click("#btnSubmit")
+  }
 
-  def getLoginError(page: WebPage) = null
+  def getLoginError(page: WebPage) = {
+    page.find(".fn_inlineValidation_errors").map(_.text)
+  }
 
-  def getAccountsBalance(page: WebPage) = null
+  def getAccountsBalance(page: WebPage) = {
+
+    null
+  }
 
   def getAccountNames(page: WebPage) = null
 

@@ -23,14 +23,14 @@ import model.{AccountTransaction, AccountBalance}
 import utils.CsvParser
 import xml.XML
 import scala.Some
-import java.io.File
 import java.text.SimpleDateFormat
+import java.io.File
 
 /**
  * 
  */
 object CbaPageOps extends PageOps with Logging{
-  private val transSummary = "#ctl00_BodyPlaceHolder_MyPortfolioGrid1_a"
+  private val transSummary = ".homeMPMR table" //"#ctl00_BodyPlaceHolder_MyPortfolioGrid1_a"
   private val accountNameSelector = transSummary + " div[class='left'] a"
   private val accountTransLink = transSummary + " div[class='left'] a[title='%s']"
   private val acctListSelector = "#ctl00_ContentHeaderPlaceHolder_ddlAccount_field" //previous : ctl00_BodyPlaceHolder_blockAccount_ddlAccount_field"
@@ -99,8 +99,11 @@ object CbaPageOps extends PageOps with Logging{
   }
 
   def downloadTransactions(page:WebPage)= {
-    if (page.find(".export").map(_.attr("class").contains("hidden")).getOrElse(false)) Seq()
-    else{
+    if (page.find(".export").map(_.attr("class").contains("hidden")).getOrElse(true)) {
+      warn("no transaction export link present.")
+      page.saveTo(File.createTempFile("cba",".html").getAbsolutePath)
+      Seq()
+    } else{
       val dateFmt = new SimpleDateFormat("dd/MM/yyyy")
       page.click(".export a :content(Export)")
       page.first("#ctl00_ToobarFooterRight_ddlExportType_field").value = "CSV"
@@ -120,8 +123,7 @@ object CbaPageOps extends PageOps with Logging{
     if (!page.title.contains(transPageTitle)){
       error("Transaction page verification failed. Unexpected page title:" + page.title)
       false
-    }
-    true
+    } else true
   }
 
   def openTransactionsPage(page: WebPage, account: String) {

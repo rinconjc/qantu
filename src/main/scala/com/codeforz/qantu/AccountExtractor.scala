@@ -117,7 +117,9 @@ class AccountPageNavigator(implicit ops:PageOps) extends Logging{
         ops.doLogin(p, userId, pass)
         AccountsHome(p)
       }catch{
-        case t:Throwable => throw new LoginFailureException(t.getMessage)
+        case t:Exception =>
+          error("Login failure", t)
+          throw new LoginFailureException(t.getMessage)
       }
     }
   }
