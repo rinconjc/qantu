@@ -28,7 +28,7 @@ import java.text.SimpleDateFormat
 /**
  * 
  */
-object NabPageOps extends PageOps with Logging{
+class NabPageOps extends PageOps with Logging{
   private val bsbAcctNo = """BSB:\s*([^\s]+)\s*Acct No:\s*([^\s]+)\s*""".r
 
   val bankId = "NAB"

@@ -25,7 +25,8 @@ import com.codeforz.sclicks.WebPage
 class AnzPageOpsTest extends SpecificationWithJUnit {
   lazy val transPage = WebPage.open(getClass.getResource("/anz/anz-trans2-latin.html").toURI.toString)
   lazy val acctsPage = WebPage.open(getClass.getResource("/anz/anz-home2.html").toString)
-  import AnzPageOps._
+  lazy val pageExtractor = new AnzPageOps
+  import pageExtractor._
 
   "AnzPageOps" should{
     "get accounts balance" in{

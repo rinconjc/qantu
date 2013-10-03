@@ -28,7 +28,7 @@ import java.text.SimpleDateFormat
 /**
  * 
  */
-object AnzPageOps extends PageOps with Logging{
+class AnzPageOps extends PageOps with Logging{
 
   val bankId= "ANZ"
   val bankName = "ANZ Bank"

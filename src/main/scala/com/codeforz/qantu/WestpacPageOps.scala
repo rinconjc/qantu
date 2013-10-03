@@ -23,7 +23,7 @@ import java.util.Date
 /**
  * 
  */
-object WestpacPageOps extends PageOps with Logging{
+class WestpacPageOps extends PageOps with Logging{
 
   val bankId = "WESTPAC"
   val bankName = "Westpac Bank"

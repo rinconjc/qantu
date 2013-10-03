@@ -22,7 +22,7 @@ import java.util.Date
 /**
  * 
  */
-object AustraliaSuperPageOps extends PageOps{
+class AustraliaSuperPageOps extends PageOps{
 
   val bankId = "AUSUP"
   val bankName = "Australia Super"

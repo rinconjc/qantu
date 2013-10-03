@@ -24,7 +24,8 @@ import com.codeforz.sclicks.WebPage
  */
 class CitiPageOpsTest extends SpecificationWithJUnit {
   lazy val page = WebPage.open(getClass.getResource("/citi/citi-home-latin.html").toURI.toString)
-  import CitiPageOps._
+  val citiOps = new CitiPageOps
+  import citiOps._
   "parse balance" in{
     val balance = getAccountsBalance(page)
     println(balance)

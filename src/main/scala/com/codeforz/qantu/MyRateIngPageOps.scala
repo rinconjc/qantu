@@ -32,7 +32,7 @@ import java.text.SimpleDateFormat
 /**
  * 
  */
-object MyRateIngPageOps extends PageOps with Logging{
+class MyRateIngPageOps extends PageOps with Logging{
   private lazy val digitsHash = {
     val props = new Properties()
     props.load(getClass.getResourceAsStream("ing/digits-md5.properties"))
@@ -54,8 +54,8 @@ object MyRateIngPageOps extends PageOps with Logging{
 
     pass.map(c => digitsToImg(Some(c + ""))).foreach(_.click())
     page.click("frame[name='body'] #btnLogin")
-    page.waitForScripts(1,30)//comment after update
-    page.find("frame[name='leftmenu']").filter(_.attr("src")!="Menu.aspx").foreach(_.attr("src","Menu.aspx"))//comment after update
+    /*page.waitForScripts(1,30)//comment after update
+    page.find("frame[name='leftmenu']").filter(_.attr("src")!="Menu.aspx").foreach(_.attr("src","Menu.aspx"))//comment after update*/
     page.waitForScripts(1,30)
     page.click("frame[name='leftmenu'] a[href*='myfinances']")
   }
@@ -84,8 +84,8 @@ object MyRateIngPageOps extends PageOps with Logging{
   }
 
   def getLoginError(page: WebPage) = {
-    if (!page.title.contains("Finances")){
-    //if (page.find("frame[name='body'] #dgAccountList").isEmpty){
+    //if (!page.title.contains("Finances")){
+    if (page.find("frame[name='body'] #dgAccountList").isEmpty){
       val tmpFile = File.createTempFile("ing", ".html")
       page.saveTo(tmpFile.getAbsolutePath)
       Some(page.title)

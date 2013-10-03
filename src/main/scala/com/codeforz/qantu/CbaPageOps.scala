@@ -29,7 +29,7 @@ import java.io.File
 /**
  * 
  */
-object CbaPageOps extends PageOps with Logging{
+class CbaPageOps extends PageOps with Logging{
   private val transSummary = ".homeMPMR table" //"#ctl00_BodyPlaceHolder_MyPortfolioGrid1_a"
   private val accountNameSelector = transSummary + " div[class='left'] a"
   private val accountTransLink = transSummary + " div[class='left'] a[title='%s']"
@@ -66,7 +66,9 @@ object CbaPageOps extends PageOps with Logging{
     logger.debug("login page " + page.title)
     page.typeString(loginField, userId)
     page.typeString(passField, pass)
+    page.waitForScripts(0)
     page.click(loginButton)
+    page.waitForScripts(0)
     logger.debug("home page: " + page.title)
   }
 
@@ -95,7 +97,7 @@ object CbaPageOps extends PageOps with Logging{
   }
 
   def getAccountNames(page: WebPage) = {
-    page.all(accountNameSelector).map(_.attr("title"))
+    page.all(accountNameSelector).map(_.attr("title")).filterNot(e=>e.contains("CommSec") || e.contains("MyWealth"))
   }
 
   def downloadTransactions(page:WebPage)= {
@@ -128,16 +130,24 @@ object CbaPageOps extends PageOps with Logging{
 
   def openTransactionsPage(page: WebPage, account: String) {
     logger.info("loading trans page for " + account)
-    page.waitForScripts(1)
-    page.click(accountTransLink.format(account))
+    page.waitForScripts(0)
+
+    Iterator.from(1).takeWhile{i=>
+      page.click(accountTransLink.format(account))
+      if(!page.hasChanged && i<=2){
+        warn("Retrying page loading...")
+        true
+      } else false
+    }.size //force evaluation
+
     waitForPageLoad(page)
   }
 
-  private def waitForPageLoad(page:WebPage){
-    page.waitForScripts(1)
+  private def waitForPageLoad(page:WebPage)={
+    page.waitForScripts(0)
     utils.waitUntil(page.find(".WhiteSpinner100").map(_.attr("class").contains("Loaded")).getOrElse{
       logger.warn("not found element matching .WhiteSpinner100")
-      true}, 30)
+      false}, 30)
   }
 
   def searchTransactions(page: WebPage, start: Date, end: Date) {
@@ -158,7 +168,7 @@ object CbaPageOps extends PageOps with Logging{
 
   private def waitForTransSearch(page:WebPage){
     //logger.debug("trans-token elem:" + page.find(".divSearching").map(_.xml).getOrElse(""))
-    page.waitForScripts(1)
+    page.waitForScripts(0)
     utils.waitUntil(page.find(".divSearching").map(_.attr("class").contains("Loaded")).getOrElse{
       logger.warn("not found element matching .divSearching")
       true}, 60)
@@ -180,7 +190,7 @@ object CbaPageOps extends PageOps with Logging{
   }
 
   def openAccountsHome(page: WebPage) {
-    page.waitForScripts(1)
+    page.waitForScripts(0)
     page.click("#MainMenu a :content(My home)")
     utils.waitUntil(page.find("#heading :content(My portfolio)").isDefined, 30)
   }

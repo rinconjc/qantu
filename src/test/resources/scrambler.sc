@@ -35,7 +35,7 @@ val scrambled = args(0) + "-scrambled"
 val out = new FileWriter(scrambled)
 val df = new DecimalFormat("###,##0")
 val thisYear = Calendar.getInstance().get(Calendar.YEAR)
-Source.fromFile(args(0)).getLines().foreach{line=>
+Source.fromFile(args(0), "UTF-8").getLines().foreach{line=>
   val clean = findAndReplace(line, textContent, mm=>{
     val scrambledNumbers = findAndReplace(mm.group(), numbers, m=>{
       lazy val number = m.group().toInt

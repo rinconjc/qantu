@@ -30,7 +30,8 @@
     </scm>
 
     <properties>
-        <scala.version>2.9.2</scala.version>
+        <scala.version>2.10.1</scala.version>
+        <scala.base>2.10</scala.base>
     </properties>
 
     <dependencies>
@@ -48,8 +49,8 @@
         </dependency>
         <dependency>
             <groupId>org.specs2</groupId>
-            <artifactId>specs2_2.9.2</artifactId>
-            <version>1.10</version>
+            <artifactId>specs2_${scala.base}</artifactId>
+            <version>1.14</version>
             <scope>test</scope>
         </dependency>
 
@@ -60,8 +61,8 @@
         </dependency>
         <dependency>
             <groupId>org.clapper</groupId>
-            <artifactId>grizzled-slf4j_2.9.2</artifactId>
-            <version>0.6.9</version>
+            <artifactId>grizzled-slf4j_${scala.base}</artifactId>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
@@ -77,6 +78,7 @@
             <version>1.2.17</version>
             <scope>runtime</scope>
         </dependency>-->
+<!--
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
@@ -88,6 +90,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+-->
 
     </dependencies>
 

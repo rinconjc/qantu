@@ -26,7 +26,8 @@ class NabPageOpsTest extends SpecificationWithJUnit {
   val home = WebPage.open(getClass.getResource("/nab/nab-home2.html").toString, false)
   val trans = WebPage.open(getClass.getResource("/nab/nab-trans-filter.html").toString, false)
   val transSearch = WebPage.open(getClass.getResource("/nab/nab-trans-search-result2.html").toString, false)
-  import NabPageOps._
+  val nabOps = new NabPageOps
+  import nabOps._
 
   "Nab page ops" should{
     "parse account names" in{

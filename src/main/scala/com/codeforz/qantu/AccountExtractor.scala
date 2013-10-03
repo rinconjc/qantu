@@ -17,14 +17,12 @@
 package com.codeforz.qantu
 
 import model.{AccountBalance, AccountTransaction}
-import java.util.{Calendar, Date}
+import java.util.{ServiceLoader, Calendar, Date}
 import com.codeforz.sclicks.WebPage
 import utils.{PageWrapper, PageRef}
 import grizzled.slf4j.Logging
 import com.gargoylesoftware.htmlunit.BrowserVersion
-import org.reflections.Reflections
-import scala.collection.JavaConversions._
-
+import scala.collection.JavaConverters._
 /**
 * Bank accounts data extractor API entry point.
  *
@@ -32,8 +30,11 @@ import scala.collection.JavaConversions._
 object AccountExtractor{
 
   //loads all PageOps implementations from the classpath, and registers dynamically.
+/*
   private val extractors = new Reflections("com.codeforz.qantu").getSubTypesOf(classOf[PageOps]).map{c =>
     c.getField("MODULE$").get(classOf[PageOps]).asInstanceOf[PageOps]}.filter(_.enabled).map(p=>(p.bankId->p)).toMap
+*/
+  private val extractors = ServiceLoader.load(classOf[PageOps]).asScala.map(po=> po.bankId -> po).toMap
 
   def supportedBanks = extractors.map{case (id, ops) => (id, ops.bankName)}
 
@@ -248,7 +249,7 @@ trait PageOps{
   /**
   * The specific browser version to use when navigating this website
   */
-  def browserVersion:BrowserVersion = BrowserVersion.FIREFOX_10
+  def browserVersion:BrowserVersion = BrowserVersion.FIREFOX_17
 
   /**
   * The maximum number of days the transactions history is available in the website

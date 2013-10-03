@@ -27,7 +27,7 @@ import scala.Some
 /**
  * 
  */
-object CitiPageOps extends PageOps with Logging{
+class CitiPageOps extends PageOps with Logging{
 
   val bankId = "CITI"
   val bankName = "Citibank Australia"

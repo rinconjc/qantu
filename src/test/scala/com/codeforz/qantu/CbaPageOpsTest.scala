@@ -26,14 +26,15 @@ class CbaPageOpsTest extends SpecificationWithJUnit {
   val homePage = this.getClass.getResource("/cba/accounts-home.html").toURI.toURL.toString
   val transPage1 = this.getClass.getResource("/cba/trans-search-page.html").toURI.toURL.toString
   val transPage2 = this.getClass.getResource("/cba/last-trans-page.html").toURI.toURL.toString //default-trans-page.html
+  val cbaOps = new CbaPageOps
 
   "CbaPageOps" should {
     "extract accts summary" in {
-      CbaPageOps.getAccountsBalance(WebPage(homePage, false)) must not beEmpty
+      cbaOps.getAccountsBalance(WebPage(homePage, false)) must not beEmpty
     }
     "detect paging" in {
-      CbaPageOps.hasTransSearchMorePages(WebPage(transPage1, false)) must_== true
-      CbaPageOps.hasTransSearchMorePages(WebPage(transPage2, false)) must_== true
+      cbaOps.hasTransSearchMorePages(WebPage(transPage1, false)) must_== true
+      cbaOps.hasTransSearchMorePages(WebPage(transPage2, false)) must_== true
     }
 /*
     "extract transactions" in {
@@ -44,7 +45,7 @@ class CbaPageOpsTest extends SpecificationWithJUnit {
 */
 
     "extract accounts" in {
-      val accounts = CbaPageOps.getAccountNames(WebPage(homePage, false))
+      val accounts = cbaOps.getAccountNames(WebPage(homePage, false))
       println(accounts)
       accounts must not beEmpty
     }

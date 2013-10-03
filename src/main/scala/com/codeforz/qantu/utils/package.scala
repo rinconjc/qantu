@@ -46,13 +46,15 @@ package object utils {
 
   def removeBlanks(str:String) = str.replaceAll(BLANK_CHARS, "")
 
-  def toDate(str:String, fmt:String) = new SimpleDateFormat(fmt).parse(str)
+  def toDate(str:String, fmt:String) = new SimpleDateFormat(fmt).parse(cleanText(str))
 
   @tailrec
-  def waitUntil(cond: =>Boolean, maxSecs:Int, waitSecs:Int=2){
-    if (!cond){
+  def waitUntil(cond: =>Boolean, maxSecs:Int, waitSecs:Int=2):Boolean={
+    if(cond) true
+    else{
       if (maxSecs<=0){
         log.error("Gave up waiting ...")
+        false
       }else{
         log.warn("Waiting for condition ...")
         Thread.sleep(waitSecs*1000)
